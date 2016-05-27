@@ -1,0 +1,26 @@
+New groupmate in NDLoh's group at CBIS
+
+Welcome to our group!  This page will help you in getting started at CBIS.
+
+Note: An employee officially joins once he/she receives work pass notification letter from management assistant officer at Dean's office, Faculty of Science. After this you have to get NUSNET id, CBIS computer id and their respective passwords. 
+
+1] How to get a CBIS account?
+Ans: Contact Ms. Bai Chang (IT admin, CBIS) and request a new CBIS account. You will recieve a mail containing  username and password (should be changed later by employee.)
+
+2] How to get a staff card and NUSNET id?
+Ans: Upon receiving work pass-Notification letter, email Ms. Choy Mei (HR admin, CBIS) requesting NUSNET id and staff card.
+Once you get the 'private and confidential' envelop containing user id and password for NUSNET change the password. (Note: It may take minimum 2 days to activate your NUSNET account. If any problem arises, contact NUS IT admin at itcare@nus.edu.sg)
+
+You will recieve staff card in an envelop which also contains staff card pin. This pin is required  to register your card at the entrance gate. 
+
+3] Filling up Assumption of duty form.
+    An employee needs to fill online form for Assumption of Duty available at the staff portal (https://my.intranet.nus.edu.sg/irj/portal/pa_aod_decl ) -> eServices -> More -> Assumption of Duty (Acad)  when you assume duty.
+
+To access the staff e-services all staff are required to use the 'Two factor Authentication(2FA)'. 
+You need to download and register 2FA application on your device (Laptop/Desktop/Handphone, you can do it only on one device at a time!)
+More information and stey-by-step instructions on the 2FA can be found at https://inetapps.nus.edu.sg/2fa/index.html. If you have further questions regarding 2FA or have issues in enrolling, you may call them at 6516 2080 or email to 2FAenquiry@nus.edu.sg. 
+
+4] Fire safety training
+   Every employee has to take this Fire safety training. For this, enroll your name into fire safety training class using staff portal.
+
+
