@@ -1,0 +1,63 @@
+Setting up a Repository
+
+To store all kinds of your projects in a trackable way one can use the effective way of having one's own repository!
+
+So, how do we set up a Repository?
+This page gives the list of most important git commands for setting up your own repository. 
+For detail information please read
+https://www.atlassian.com/git/tutorials/setting-up-a-repository.
+
+The checklists of git commands given with every step is for revision of your reading and understanding of how to set up a repository from the given link. Using this if you can do the exercise given at the end of the page, you have learnt how to set up your own repository!
+
+STEP 1: Initialise a new repository 
+
+git init command creates a new repository. It creates a .git subdirectory in the project root, which contains all of the necessary metadata for the repo.You can also convert an existing directory to a git repository. (If you want to work in your local directory skip step 2)
+=======================
+Checklist for git init
+=======================
+git init
+git init <directory>
+git init --bare <directory>
+
+what does --bare do in git init --bare?
+
+STEP 2: Clone the git repo 
+(start with step 2 when you want to work on a copy of remote directory)
+git clone creates a local copy/copies of your project on a local machine so you can add your changes to it. You can clone with either HTTPs or SSH key. It is a one time operation. To set up a ssh key for your github repo, please follow steps mentioned here https://help.github.com/articles/generating-an-ssh-key/
+
+========================
+Checklist for git clone
+========================
+git clone <repo_name>
+git clone <repo_name> <desk_directory>
+
+
+STEP 3: Configure your repository 
+git config configures your git installation. It can define user info to prepferences to the behavior of a repository.
+=========================
+Checklist for git config
+=========================
+git config
+git config --global --edit
+git config --global user.name <name>
+git config --global user.email <email>
+git config --global alias.<alias-name> <git-command>
+git config --system core.editor <editor>
+
+What is --global here?
+and
+What is --system?
+
+===========================================
+Exercise
+===========================================
+
+1. Set up your central repo on your local machine and list the contents of the repo.
+
+2. git clone the existing repository into local machine using SSH key.
+
+3. Define the user info and the text editor for your repo.
+
+
+
+
