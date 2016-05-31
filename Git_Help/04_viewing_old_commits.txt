@@ -1,12 +1,14 @@
 Viewing old commits.
 
-If you want to see the old version of a file, old commits in the repository, git checkout loads any of these saved snapshots onto you development machine. Cheking out old commit is a read-only operation.Viewing old versions of your commit does not affect the current state of your project. 
+To see old version of a file, old commits in the repository, git checkout loads any of these saved snapshots onto your local machine. Cheking out old commit is a read-only operation.
+Viewing old versions of your commit does not affect the current state of your project. 
 
 Please see https://www.atlassian.com/git/tutorials/viewing-old-commits/ for more details.
 
 1] Checking out old commits and files
 
-git checkout serves as a way to revert back to an old version of an individual file. You can re-commit the old version in a new snapshot as you would do any other file. If you want to switch to a branch to work in it and then merge the work into a branch which contains stable work (such as 'master').
+git checkout serves as a way to revert back to an old version of an individual file. You can re-commit the old version in a new snapshot as you would do any other file.
+It helps when you want to switch to a branch to work in it and then merge the work into a branch which contains stable work (such as 'master').
 ==========================
 Checklist of git checkout
 ==========================
