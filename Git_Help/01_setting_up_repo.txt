@@ -2,17 +2,17 @@ Setting up a Repository
 
 To store all kinds of your projects in a trackable way one can use the effective way of having one's own repository!
 
-So, how do we set up a Repository?
 This page gives the list of most important git commands for setting up your own repository. 
 For detail information please read
 https://www.atlassian.com/git/tutorials/setting-up-a-repository and 
 https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 
-The checklists of git commands given with every step is for revision of your reading and understanding of how to set up a repository from the given link. Using this if you can do the exercise given at the end of the page, you have learnt how to set up your own repository!
+The checklists of git commands helps reinforce your understanding and long-term memory of how to set up a repository.
+Your should be able to perform the exercises at the end of this document.
 
-1] Initialise a new repository 
+1] Initialize a new repository 
 
-git init command creates a new repository. It creates a .git subdirectory in the project root, which contains all of the necessary metadata for the repo.You can also convert an existing directory to a git repository. (If you want to work in your local directory skip step 2)
+git init command creates a new repository. It creates a .git subdirectory in the project root, which contains all of the necessary metadata for the repo. You can also convert an existing directory to a git repository. (If you want to work in your local directory skip step 2)
 =======================
 Checklist for git init
 =======================
@@ -22,9 +22,9 @@ git init --bare <directory>
 
 what does --bare do in git init --bare?
 
-2] Clone the git repo 
+2] Clone a remote git repo 
 (start with step 2 when you want to work on a copy of remote directory)
-git clone creates a local copy/copies of your project on a local machine so you can add your changes to it. You can clone with either HTTPs or SSH key. It is a one time operation. To set up a ssh key for your github repo, please follow steps mentioned here https://help.github.com/articles/generating-an-ssh-key/
+git clone creates a local copy/copies of your project on a local machine so you can add your changes to it. One typically clones via HTTPS or SSH protocols in a one time operation. To set up passwordless ssh-login to your github repo, please follow steps mentioned here https://help.github.com/articles/generating-an-ssh-key/
 
 ========================
 Checklist for git clone
@@ -53,12 +53,8 @@ What is --system?
 Exercise
 ===========================================
 
-1. Set up your central repo on your local machine and list the contents of the repo.
+1. Set up your local repo on your local machine and list the contents of the repo.
 
-2. git clone the existing repository into local machine using SSH key.
+2. git clone an existing remote repository into local machine using SSH key.
 
-3. Define the user info and the text editor for your repo.
-
-
-
-
+3. Configure your user info (name, email, etc) and the text editor in your local git installation.
