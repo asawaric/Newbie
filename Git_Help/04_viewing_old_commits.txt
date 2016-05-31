@@ -1,0 +1,41 @@
+Viewing old commits.
+
+If you want to see the old version of a file, old commits in the repository, git checkout loads any of these saved snapshots onto you development machine. Cheking out old commit is a read-only operation.Viewing old versions of your commit does not affect the current state of your project. 
+
+Please see https://www.atlassian.com/git/tutorials/viewing-old-commits/ for more details.
+
+1] Checking out old commits and files
+
+git checkout serves as a way to revert back to an old version of an individual file. You can re-commit the old version in a new snapshot as you would do any other file. If you want to switch to a branch to work in it and then merge the work into a branch which contains stable work (such as 'master').
+==========================
+Checklist of git checkout
+==========================
+git checkout
+git checkout -b <branchname>
+
+git checkout <cummit_num>
+
+git checkout <commit_num> <file>
+
+2] Check the current changes
+
+git diff shows all current local changes in working copy that are unstaged. You can also see only changes that have already been added to the staging area.
+git diff also gives details of how one branch is different from another.
+
+Plese see https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs for more details 
+and
+https://git-scm.com/docs/git-diff 
+=========================
+checklist of git diff
+=========================
+git diff
+git diff --staged
+git diff <branch1> <branch2>
+
+
+==============================
+Exercise
+==============================
+1. Checkout previous version of any file in your repo.
+
+2. Check the comparision of two different branches.
