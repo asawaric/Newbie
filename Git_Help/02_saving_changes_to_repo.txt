@@ -1,6 +1,8 @@
 Saving/Adding changes to a repository
 
-Once we have initiated the project in a repository, we can start composing the changes and add it to the project. This section will explain the commands needed to add and commit changes to your project. Read details about it here https://www.atlassian.com/git/tutorials/saving-changes/git-add
+Once we have initiated the project in a repository, we can start composing the changes and add it to the project. This section will explain the commands needed to add and commit changes to your project. 
+
+Detailed tutorial found at https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
 1] Adding changes to a project
 
@@ -14,10 +16,9 @@ git add <file>
 git add <directory>
 git add -p
 
-What's the purpose of -p?
+What's the purpose of the -p flag?
 
-
-2] Commit the changes to a project
+2] Commit changes to a repository
 
 git commit takes the staged changes and commits it to the project history. 
 =========================
@@ -27,12 +28,10 @@ git commit
 git commit -a
 git commit -a -m <commit_message_in_double_quotes>
 
-
 ===========================
-Exercise
+Exercises
 ===========================
 
-1. Add new files and a folder to remote repo.
+1. Add new files and a folder to the local repository.
 
 2. Commit the changes with brief message.
-
