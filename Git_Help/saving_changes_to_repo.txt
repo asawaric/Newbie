@@ -2,7 +2,7 @@ Saving/Adding changes to a repository
 
 Once we have initiated the project in a repository, we can start composing the changes and add it to the project. This section will explain the commands needed to add and commit changes to your project. Read details about it here https://www.atlassian.com/git/tutorials/saving-changes/git-add
 
-STEP 1: Adding changes to a project
+1] Adding changes to a project
 
 git add command adds the changes done in the working directory to staging area. It tells git that you want to include updates to a particular file in the project.
 
@@ -17,7 +17,7 @@ git add -p
 What's the purpose of -p?
 
 
-STEP 2: Commit the changes to a project
+2] Commit the changes to a project
 
 git commit takes the staged changes and commits it to the project history. 
 =========================
