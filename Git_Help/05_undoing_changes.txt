@@ -59,8 +59,9 @@ git clean -xf
 
 
 ==================================
-EXERCISE
+Exercises
 ==================================
+
 EXERCISE 5.1 Checkout the most recent version of any file in your repo.
 
 EXERCISE 5.2 Revert to the newly created commit.
