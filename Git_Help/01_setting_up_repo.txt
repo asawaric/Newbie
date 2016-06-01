@@ -50,7 +50,7 @@ and
 What is --system?
 
 ===========================================
-EXERCISES
+Exercises
 ===========================================
 
 EXERCISE 1.1 Set up your local repo on your local machine and list the contents of the repo.
