@@ -29,9 +29,9 @@ git commit -a
 git commit -a -m <commit_message_in_double_quotes>
 
 ===========================
-Exercises
+EXERCISES
 ===========================
 
-1. Add new files and a folder to the local repository.
+EXERCISE 2.1 Add new files and a folder to the local repository.
 
-2. Commit the changes with brief message.
+EXERCISE 2.2 Commit the changes with brief message.
