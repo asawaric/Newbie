@@ -50,11 +50,11 @@ and
 What is --system?
 
 ===========================================
-Exercise
+EXERCISES
 ===========================================
 
-1. Set up your local repo on your local machine and list the contents of the repo.
+EXERCISE 1.1 Set up your local repo on your local machine and list the contents of the repo.
 
-2. git clone an existing remote repository into local machine using SSH key.
+EXERCISE 1.2 git clone an existing remote repository into local machine using SSH key.
 
-3. Configure your user info (name, email, etc) and the text editor in your local git installation.
+EXERCISE 1.3 Configure your user info (name, email, etc) and the text editor in your local git installation.
