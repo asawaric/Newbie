@@ -1,0 +1,71 @@
+Undoing_changes
+
+Git presents you very useful tools with git checkout, git revert and git reset commands. These commands let you undo chnages in your repository, manipulate either commits or individual files. 
+Be careful, because this is one of the few areas in Git where you may loose some work if you do it wrong!
+
+For more details, read https://www.atlassian.com/git/tutorials/undoing-changes/git-checkout
+
+1] Checking out old commits, branches, files
+
+git checkout serves as a way to revert back to an old version of an individual file. You can re-commit the old version in a new snapshot as you would do any other file.
+git checkout also lets you switch to a branch to work in it and then merge the work into a branch which contains stable work (such as 'master').
+===============================
+Checklist for git checkout
+===============================
+git checkout
+git checkout <branch>
+git checkout -b <branch>
+git checkout -b <branch> <start_point>
+git checkout <commit> <file>
+git checkout <commit> 
+
+
+2] Undo committed snapshots
+
+git revert should be used when you want to remove an entire commit from your project hisotry. git checkout does it without loosing history by figuring out how to undo the changes introduced by the commit and appends a new commit with the resulting content.
+===============================
+Checklist for git revert
+===============================
+git revert
+git revert <commit>
+
+
+3] Permanent undo
+
+Undo with git reset is used to remove committed snapshots, undo changes in the staging area and the working history. Caution: This command has potential to loose your work as there is no way to retrieve the original copy! So, never perform git reset operation on commits which you have already pushed to a shared repository.
+================================
+Checklist for git reset
+================================
+git reset
+git reset <file>
+git reset --hard
+git reset <commit>
+git reset --hard <commit>
+
+What does --hard flag do?
+
+4] Remove untracked files
+
+git clean removes untracked files and folders from your working directory. This is not undoable hence make sure you really want to delete the untracked files an folders.
+=================================
+Checklist for git clean
+=================================
+git clean
+git clean -n
+git clean -f
+git clean -f <path>
+git clean -df
+git clean -xf
+
+
+==================================
+EXERCISE
+==================================
+EXERCISE 5.1 Checkout the most recent version of any file in your repo.
+
+EXERCISE 5.2 Revert to the newly created commit.
+
+EXERCISE 5.3 Unstage any tracked file in your local repo.
+
+EXERCISE 5.4 Remove untracked files from the current directory.
+
