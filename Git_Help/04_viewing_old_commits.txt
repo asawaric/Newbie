@@ -35,8 +35,9 @@ git diff <branch1> <branch2>
 git difftool
 
 ==============================
-EXERCISES
+Exercises
 ==============================
+
 EXERCISE 4.1 Checkout previous version of any file in your repo.
 
 EXERCISE 4.2 Compare two different versions of a file in your repo.
