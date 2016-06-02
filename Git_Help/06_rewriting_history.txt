@@ -1,0 +1,49 @@
+Rewriting history
+
+To give total control over your development workflow and never lose a committed changes Git provides its history-rewriting commands.
+
+Caution! : Using some of these commands for commits made to public repositories might make you lose your data!
+
+For more details see https://www.atlassian.com/git/tutorials/rewriting-history/git-commit--amend
+
+1] Amending staged changes
+
+git commit --amend lets you combine newly staged changes with previous commit. But it not only alters the most recent commit-it replaces it entirely. Hence do not ammend to public history!
+=================================
+Checklist for git commit --amend
+=================================
+git commit --amend
+git commit --amend --no-edit
+
+
+2] Rebasing a branch
+
+git rebase moves a branch from one commit to another. Git accomplishes this by creating new commits and applying them to the specified base. It's rewriting a project hisotry, hence do not rebase in public hisotry!
+Interactive rebasing allows you to clean up hisotry by removing, splitting and altering an existing series of commits. 
+==================================
+Checklist for git rebase
+==================================
+git rebase
+git rebase <base>
+git rebase -i
+
+
+3] Keep track of the updates
+
+After rewriting history, the reflog contains information about the old state of the branches and allows you to go back to that state if necessary. Every time the current HEAD gets updated a new entry will be added to the reflog.
+==================================
+Checklist for git reflog
+==================================
+git reflog
+git reflog --relative-date
+
+
+===================================
+Exercises
+===================================
+
+EXERCISE 6.1 Update most recent commit message.
+
+EXERCISE 6.2 Change the order of the commits and transfer to the new base.
+
+EXERCISE 6.3 Check the reflog for local repository.
