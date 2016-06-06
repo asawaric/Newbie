@@ -1,7 +1,7 @@
 Undoing_changes
 
 Git presents you very useful tools with git checkout, git revert and git reset commands. These commands let you undo chnages in your repository, manipulate either commits or individual files. 
-Be careful, because this is one of the few areas in Git where you may loose some work if you do it wrong!
+Be careful, because this is one of the few areas in Git where you may lose some work if you do it wrong!
 
 For more details, read https://www.atlassian.com/git/tutorials/undoing-changes/git-checkout
 
@@ -22,7 +22,7 @@ git checkout <commit>
 
 2] Undo committed snapshots
 
-git revert should be used when you want to remove an entire commit from your project hisotry. git checkout does it without loosing history by figuring out how to undo the changes introduced by the commit and appends a new commit with the resulting content.
+git revert should be used when you want to remove an entire commit from your project hisotry. git checkout does it without losing history by figuring out how to undo the changes introduced by the commit and appends a new commit with the resulting content.
 ===============================
 Checklist for git revert
 ===============================
@@ -32,7 +32,7 @@ git revert <commit>
 
 3] Permanent undo
 
-Undo with git reset is used to remove committed snapshots, undo changes in the staging area and the working history. Caution: This command has potential to loose your work as there is no way to retrieve the original copy! So, never perform git reset operation on commits which you have already pushed to a shared repository.
+Undo with git reset is used to remove committed snapshots, undo changes in the staging area and the working history. Caution: This command has potential to lose your work as there is no way to retrieve the original copy! So, never perform git reset operation on commits which you have already pushed to a shared repository.
 ================================
 Checklist for git reset
 ================================
