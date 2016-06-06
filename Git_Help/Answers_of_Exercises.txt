@@ -1,0 +1,108 @@
+Answers of Exercises 1 to 8
+
+
+===========================================
+Exercises 1
+===========================================
+
+EXERCISE 1.1 Set up your local repo on your local machine and list the contents of the repo.
+Ans:     a) Set up a local repo using command; git clone <repo> <directory> 
+         b) TO list the contents of the repo use command; ls or ls -al   
+
+EXERCISE 1.2 git clone an existing remote repository into local machine using SSH key.
+Ans:
+
+EXERCISE 1.3 Configure your user info (name, email, etc) and the text editor in your local git installation.
+Ans:
+
+===========================
+Exercises 2
+===========================
+
+EXERCISE 2.1 Add new files and a folder to the local repository.
+Ans:
+
+EXERCISE 2.2 Commit the changes with brief message.
+Ans:
+
+===========================
+Exercises 3
+===========================
+
+EXERCISE 3.1 Check the status of the working directory.
+Ans:
+
+EXERCISE 3.2 Create a ".gitignore" file in your project directory which lists the files to be ignored.
+Ans:
+
+EXERCISE 3.3 Check the history of commits as graph-summary.
+Ans:
+
+==============================
+Exercises 4
+==============================
+
+EXERCISE 4.1 Checkout previous version of any file in your repo.
+Ans:
+
+EXERCISE 4.2 Compare two different versions of a file in your repo.
+Ans:
+
+==================================
+Exercises 5
+==================================
+
+EXERCISE 5.1 Checkout the most recent version of any file in your repo.
+Ans:
+
+EXERCISE 5.2 Revert to the newly created commit.
+Ans:
+
+EXERCISE 5.3 Unstage any tracked file in your local repo.
+Ans:
+
+EXERCISE 5.4 Remove untracked files from the current directory.
+Ans:
+
+
+===================================
+Exercises 6
+===================================
+
+EXERCISE 6.1 Update most recent commit message.
+Ans:
+
+EXERCISE 6.2 Change the order of the commits and transfer to the new base.
+Ans:
+
+EXERCISE 6.3 Check the reflog for local repository.
+Ans:
+
+============================
+Exercises 7
+============================
+
+EXERCISE 7.1 Check all your remote branches.
+Ans:
+
+EXERCISE 7.2 Fetch a master branch from remote repo.
+Ans:
+
+EXERCISE 7.3 Integrate the remote branch with local using rebase.
+Ans:
+
+EXERCISE 7.4 Push all your local tags to the remote repo.
+Ans:
+
+==================================
+Exercises 8
+==================================
+
+EXERCISE 8.1 Check all completely merged branches with the HEAD.
+Ans:
+
+EXERCISE 8.2 Create and checkout new branch.
+Ans:
+
+EXERCISE 8.3 Merge any branch into the current branch and generate a merge commit. 
+Ans:
