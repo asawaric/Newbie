@@ -1,6 +1,6 @@
 Syncing
 
-In Git's collaboration model, every developer is given their own copy of the repository, complete with its own local history and branch structure. Users can share series of commits and the entire branches between the repositories thereby managing connections with other repositories.
+In Git's collaboration model every developer is given their own copy of the repository complete with its own local history and branch structure. Users can share series of commits and the entire branches between the repositories thereby managing connections with other repositories.
 
 For more details read https://www.atlassian.com/git/tutorials/syncing
 
@@ -31,7 +31,7 @@ git branch -r
 
 3] Fetch + Merge
 
-git pull downloads a branch from a remote repo and immediately merges it into the current branch. It is automated version of git fetch.
+git pull downloads a branch from a remote repo and immediately merges it into the current branch. It is an automated version of git fetch.
 ===========================
 Checklist for git pull
 ===========================
