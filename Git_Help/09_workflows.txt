@@ -1,6 +1,6 @@
 Comparing workflows
 
-Git repository is a point for all the developers to share their code. With Git's distributed environment, we can utilize some of the distributed workflows to work as a contributor,as an integrator and to maintain a project successfully with a number of developers contributing.
+Git repository is a point for all the developers to share their code. With Git's distributed environment, we can utilize some of the distributed workflows to work as a contributor, as an integrator and to maintain a project with a number of contributing developers.
 
 For more details, read https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
 https://www.atlassian.com/git/tutorials/comparing-workflows
@@ -41,8 +41,8 @@ Pull request to other group member 'B'
 =>'B' receives pull request and takes a look at A's feature.
 =>'B' wants to add few changes before integrating it to official project.
 Pull requests between 'A' and 'B'
-=>'A' edits, satges, commits and pushes updates to the central repository.
-=>A's all activities shows up in the pull request and 'B' could pull A's feature into his local repo and work on his own.
+=>'A' edits, stages, commits and pushes updates to the central repository.
+=>All of A's activities show up in the pull request and 'B' could pull A's feature into his local repo and work on his own.
 A publishes his feature
 Checking master branch for updates
 Merge the Central repo's copy of new feature
