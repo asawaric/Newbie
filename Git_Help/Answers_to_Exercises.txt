@@ -14,8 +14,8 @@ SOLUTION :   cd ~
 	     ls -al
 
 EXERCISE 1.2 Clone an existing remote git repository to home directory on your local machine using SSH key.
-SOLUTION :   First, you must have a SSH key set for your Git repo. See https://help.github.com/articles/generating-an-ssh-key/ to set up SSH 
-             key for your Git repo. Then,
+SOLUTION :   First, identify the remote git repository from which you'll like to clone. 
+If you the git repo has ssh-only access, you must have a SSH key set for your Git repo. See https://help.github.com/articles/generating-an-ssh-key/ to set up SSH key for your Git repo. Then,
 	     cd ~	
              git clone git@github.com:USERNAME/YOURREPOSITORY.git 
 
@@ -29,10 +29,12 @@ SOLUTION :   cd ~/my_local_repo
 Exercises 2: Saving changes
 ==============================
 
-EXERCISE 2.1 Add new file and a folder to the local git repository named my_local_repo.
+EXERCISE 2.1 Add new empty file named "my_new_file.txt" and a folder "my_new_folder" to the local git repository named my_local_repo. You should create this local repo if its absent.
 SOLUTION :   cd ~/my_local_repo
-	     git add <file_name>
-             git add <folder_name>
+	     touch my_new_file.txt
+	     mkdir my_new_folder
+	     git add my_new_file.txt
+             git add my_new_folder
 
 EXERCISE 2.2 Commit the addition of new file to the git repo with brief message. 
 SOLUTION :   git commit -m "Added new file" 
@@ -57,13 +59,17 @@ SOLUTION :   cd ~/my_local_repo
 Exercises 4: Viewing old commits
 ==================================
 
-EXERCISE 4.1 Checkout previous version of any file in your local git repo.
+EXERCISE 4.1 Checkout a previous version of any file in your local git repo. 
 SOLUTION :   cd ~/my_local_repo
              git checkout <commit_id> <file_name>
+             # If you have added my_new_file.txt to your repo from EXERCISE 2.1,
+             git checkout my_new_file.txt 
 
 EXERCISE 4.2 Compare two different versions of a file in your local git repo.
-SOLUTION :   git diff HEAD
-
+SOLUTION :   git diff HEAD 
+             # If you have added my_new_file.txt to your repo from EXERCISE 2.1,
+	     git diff HEAD my_new_file.txt
+	     
 ==================================
 Exercises 5: Undoing changes
 ==================================
@@ -85,7 +91,7 @@ SOLUTION :   cd ~/my_local_repo/<current_directory_name>
              git clean -f
 
 ==================================
-Exercises 6: Rewriting History
+Exercises 6: Rewriting history
 ==================================
 
 EXERCISE 6.1 Update most recent commit message for the most recent commit made to the git repo .
@@ -99,7 +105,7 @@ SOLUTION :   cd ~/my_local_repo
              git reflog
 
 ====================================
-Exercises 7: Collaborating_Synching
+Exercises 7: Collaborating: Syncing
 ====================================
 
 EXERCISE 7.1 Check all remote branches of your remote git repo.
@@ -116,7 +122,7 @@ EXERCISE 7.4 Push all your local tags to the remote git repo.
 SOLUTION :   git push <remote> --tags
 
 ==========================================
-Exercises 8: Collaborating_Using branches
+Exercises 8: Collaborating: Using branches
 ==========================================
 
 EXERCISE 8.1 Check all completely merged branches with the current branch of your local git repo.
