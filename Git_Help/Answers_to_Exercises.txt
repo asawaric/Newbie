@@ -2,123 +2,134 @@ Answers to Exercises 1 to 8
 
 Important: The exercises given are to be done using terminal commands and not using Git GUI.
 
-===========================================
+=======================================
 Exercises 1: Setting up a repository
-===========================================
+=======================================
 
-EXERCISE 1.1 Set up a local repo on your local machine and list the contents of the repo.
-Ans:     a) To set up a local repo
-             1.First SSH into the server that contains your central repo; ssh <user>@<host>
-	     2.Navigate to place where you want to store the project; cd path/above/repo
-	     3.Create a bare central repo; git init --bare myproject.git
-             4.Clone the central repo to your local machine using git clone <repo_name> <directory_name> 
+EXERCISE 1.1 Create and initialize a local git repository named my_local_repo in your home directory, and list the contents of this  		     repository.
+SOLUTION :   cd ~
+	     mkdir my_local_repo
+	     cd my_local_repo
+	     git init
+	     ls -al
 
-         b) To list the contents of the repo use command; ls or ls -al   
-
-
-EXERCISE 1.2 git clone an existing remote repository into local machine using SSH key.
-Ans:     a) First, you must have a SSH key set for your Git repo. See https://help.github.com/articles/generating-an-ssh-key/ to set up SSH 
-            key for your Git repo. Then,
-         b) git clone git@github.com:USERNAME/YOURREPOSITORY.git 
-
+EXERCISE 1.2 Clone an existing remote git repository to home directory on your local machine using SSH key.
+SOLUTION :   First, you must have a SSH key set for your Git repo. See https://help.github.com/articles/generating-an-ssh-key/ to set up SSH 
+             key for your Git repo. Then,
+	     cd ~	
+             git clone git@github.com:USERNAME/YOURREPOSITORY.git 
 
 EXERCISE 1.3 Configure your user info (name, email, etc) and the text editor in your local git installation.
-Ans:     a) To configure username; git config user.name <name>
-         b) To configure user email; git config user.email <email>
-         c) To configure text editor; git config --system core.editor <editor> 
+SOLUTION :   cd ~/my_local_repo
+	     git config user.name <name>               
+             git config user.email <email>            
+             git config --system core.editor <editor>  
 
 ==============================
 Exercises 2: Saving changes
 ==============================
 
-EXERCISE 2.1 Add new file and a folder to the local repository.
-Ans:     a) To add new file; git add <file_name>
-         b) To add new folder; git add <folder_name>
+EXERCISE 2.1 Add new file and a folder to the local git repository named my_local_repo.
+SOLUTION :   cd ~/my_local_repo
+	     git add <file_name>
+             git add <folder_name>
 
-EXERCISE 2.2 Commit the changes with brief message.
-Ans:         git commit -m "brief_message" 
+EXERCISE 2.2 Commit the addition of new file to the git repo with brief message. 
+SOLUTION :   git commit -m "Added new file" 
 
-=====================================
+======================================
 Exercises 3: Inspecting a repository
-=====================================
+======================================
 
-EXERCISE 3.1 Check the status of the working directory.
-Ans:         git status
+EXERCISE 3.1 Check the status of the working directory in your local git repo named my_local_repo
+SOLUTION :   cd ~/my_local_repo
+             git status
 
 EXERCISE 3.2 Create a ".gitignore" file in your project directory which lists the files to be ignored.
-Ans:	     Navigate to the location of your git repo and enter touch .gitignore
+SOLUTION :   cd ~/my_local_repo 
+	     touch .gitignore
 
-EXERCISE 3.3 Check the history of commits as graph-summary.
-Ans:         git log --graph --decorate --oneline
+EXERCISE 3.3 Check the history of commits made to the git repo as graph-summary.
+SOLUTION :   cd ~/my_local_repo
+             git log --graph --decorate --oneline
 
 ==================================
 Exercises 4: Viewing old commits
 ==================================
 
-EXERCISE 4.1 Checkout previous version of any file in your repo.
-Ans:         git checkout <commit_id> <file_name>
+EXERCISE 4.1 Checkout previous version of any file in your local git repo.
+SOLUTION :   cd ~/my_local_repo
+             git checkout <commit_id> <file_name>
 
-EXERCISE 4.2 Compare two different versions of a file in your repo.
-Ans:         git diff HEAD
+EXERCISE 4.2 Compare two different versions of a file in your local git repo.
+SOLUTION :   git diff HEAD
 
 ==================================
 Exercises 5: Undoing changes
 ==================================
 
-EXERCISE 5.1 Checkout the most recent version of any file in your repo.
-Ans:	    git checkout HEAD <file_name>
+EXERCISE 5.1 Checkout the most recent version of a file named new_file in your local git repo.
+SOLUTION :   cd ~/my_local_repo
+	     git checkout HEAD <file_name>
 
-EXERCISE 5.2 Revert to the newly created commit.
-Ans:        git revert HEAD
+EXERCISE 5.2 Revert to the newly created commit in your local git repo.
+SOLUTION :   cd ~/my_local_repo
+	     git revert HEAD
 
-EXERCISE 5.3 Unstage any tracked file in your local repo.
-Ans:        git reset <file_path>
+EXERCISE 5.3 Unstage any tracked file in your local git repo.
+SOLUTION :   cd ~/my_local_repo
+             git reset <file_path>
 
-EXERCISE 5.4 Remove untracked files from the current directory.
-Ans:        git clean -f
+EXERCISE 5.4 Remove untracked files from the current directory in your local git repo.
+SOLUTION :   cd ~/my_local_repo/<current_directory_name>
+             git clean -f
 
-
-===================================
+==================================
 Exercises 6: Rewriting History
-===================================
+==================================
 
-EXERCISE 6.1 Update most recent commit message.
-Ans:         git commit --amend -m "New message"
+EXERCISE 6.1 Update most recent commit message for the most recent commit made to the git repo .
+SOLUTION :   git commit --amend -m "New message"
 
-EXERCISE 6.2 Change the order of the commits and transfer to the new base.
-Ans:         git rebase -i <base>
+EXERCISE 6.2 Change the order of the commits made to the git repo and transfer to the new base.
+SOLUTION :   git rebase -i <base>
 
 EXERCISE 6.3 Check the reflog for local repository.
-Ans:         git reflog
+SOLUTION :   cd ~/my_local_repo
+             git reflog
 
 ====================================
 Exercises 7: Collaborating_Synching
 ====================================
 
-EXERCISE 7.1 Check all your remote branches.
-Ans:         git branch -r
+EXERCISE 7.1 Check all remote branches of your remote git repo.
+SOLUTION :   git branch -r
 
-EXERCISE 7.2 Fetch a master branch from remote repo.
-Ans:	     git fetch <remote> master
+EXERCISE 7.2 Fetch a master branch from remote repo to your local git repo.
+SOLUTION :   cd ~/my_local_repo
+             git fetch <remote> master
 
-EXERCISE 7.3 Integrate the remote branch with local using rebase.
-Ans:         git pull --rebase <remote>
+EXERCISE 7.3 Integrate the remote branch with local branch using rebase.
+SOLUTION :   git pull --rebase <remote>
 
-EXERCISE 7.4 Push all your local tags to the remote repo.
-Ans:         git push <remote> --tags
+EXERCISE 7.4 Push all your local tags to the remote git repo.
+SOLUTION :   git push <remote> --tags
 
 ==========================================
 Exercises 8: Collaborating_Using branches
 ==========================================
 
-EXERCISE 8.1 Check all completely merged branches with the HEAD.
-Ans:         git branch --merged
+EXERCISE 8.1 Check all completely merged branches with the current branch of your local git repo.
+SOLUTION :   cd ~/my_local_repo
+             git branch --merged
 
-EXERCISE 8.2 Create and checkout new branch.
-Ans:         git checkout -b <New_branchname>
+EXERCISE 8.2 Create and checkout new branch in your local git repo.
+SOLUTION :   cd ~/my_local_repo
+             git checkout -b <New_branchname>
 
-EXERCISE 8.3 Merge any branch into the current branch and generate a merge commit. 
-Ans:         git merge --no-ff <branchname>
+EXERCISE 8.3 Merge any branch into the current branch of your local git repo and generate a merge commit. 
+SOLUTION :   cd ~/my_local_repo
+             git merge --no-ff <branchname>
 
 
 
