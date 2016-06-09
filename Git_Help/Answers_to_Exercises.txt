@@ -15,7 +15,7 @@ SOLUTION :   cd ~
 
 EXERCISE 1.2 Clone an existing remote git repository to home directory on your local machine using SSH key.
 SOLUTION :   First, identify the remote git repository from which you'll like to clone. 
-If you the git repo has ssh-only access, you must have a SSH key set for your Git repo. See https://help.github.com/articles/generating-an-ssh-key/ to set up SSH key for your Git repo. Then,
+	     To have your git repo ssh-only access, you must have a SSH key set for your Git repo. See https://help.github.com/articles/generating-an-ssh-key/ 		     to set up SSH key for your Git repo. Then,
 	     cd ~	
              git clone git@github.com:USERNAME/YOURREPOSITORY.git 
 
@@ -29,7 +29,7 @@ SOLUTION :   cd ~/my_local_repo
 Exercises 2: Saving changes
 ==============================
 
-EXERCISE 2.1 Add new empty file named "my_new_file.txt" and a folder "my_new_folder" to the local git repository named my_local_repo. You should create this local repo if its absent.
+EXERCISE 2.1 Add new empty file named "my_new_file.txt" and a folder "my_new_folder" to the local git repository named my_local_repo. You 		     		     should create this local repo if its absent.
 SOLUTION :   cd ~/my_local_repo
 	     touch my_new_file.txt
 	     mkdir my_new_folder
@@ -43,7 +43,7 @@ SOLUTION :   git commit -m "Added new file"
 Exercises 3: Inspecting a repository
 ======================================
 
-EXERCISE 3.1 Check the status of the working directory in your local git repo named my_local_repo
+EXERCISE 3.1 Check the status of the working directory in your local git repo named my_local_repo.
 SOLUTION :   cd ~/my_local_repo
              git status
 
@@ -74,7 +74,7 @@ SOLUTION :   git diff HEAD
 Exercises 5: Undoing changes
 ==================================
 
-EXERCISE 5.1 Checkout the most recent version of a file named new_file in your local git repo.
+EXERCISE 5.1 Checkout the most recent version of a file named my_new_file in your local git repo.
 SOLUTION :   cd ~/my_local_repo
 	     git checkout HEAD <file_name>
 
@@ -94,13 +94,35 @@ SOLUTION :   cd ~/my_local_repo/<current_directory_name>
 Exercises 6: Rewriting history
 ==================================
 
-EXERCISE 6.1 Update most recent commit message for the most recent commit made to the git repo .
-SOLUTION :   git commit --amend -m "New message"
+EXERCISE 6.1 Create a new branch named my_new_branch
+SOLUTION :   git branch my_new_branch
 
-EXERCISE 6.2 Change the order of the commits made to the git repo and transfer to the new base.
-SOLUTION :   git rebase -i <base>
+EXERCISE 6.2 Edit my_new_file and commit these changes to my_new_branch.
+SOLUTION :   git checkout my_new_branch
+             gedit my_new_file  # edit and save the changes to the file
+             git add my_new_file.txt
+             git commit -m "Added a file to my_new_branch"
 
-EXERCISE 6.3 Check the reflog for local repository.
+EXERCISE 6.3 Edit another file named my_second_file.txt in the master branch and commit the changes to the master branch
+SOLUTION :   git checkout master
+             gedit my_second_file  # edit and save the changes to the file
+             git add my_second_file.txt
+             git commit -m "Added second file"
+
+EXERCISE 6.4 Update most recent commit message for the most recent commit made to the git repo .
+SOLUTION :   git commit --amend -m "Added second file to master"
+
+EXERCISE 6.5 Rebase my_new_branch onto the changes made to the master branch and then merge these into the master branch.
+SOLUTION :   git checkout my_new_branch
+             git rebase master
+             git checkout master
+             git merge master
+
+EXERCISE 6.6 Change the order of the commits made to the my_local_repo and transfer to the master.
+SOLUTION :   git checkout my_new_branch
+	     git rebase -i master
+
+EXERCISE 6.7 Check the reflog for my_local_repo.
 SOLUTION :   cd ~/my_local_repo
              git reflog
 
@@ -108,22 +130,28 @@ SOLUTION :   cd ~/my_local_repo
 Exercises 7: Collaborating: Syncing
 ====================================
 
-EXERCISE 7.1 Check all remote branches of your remote git repo.
+EXERCISE 7.1 Create a remote branch named new_feature_branch and check the updates form remote git repo.
+SOLUTION :   git push origin origin:refs/heads/new_feature branch
+             git fetch origin
+
+EXERCISE 7.2 Check all remote branches of your remote git repo.
 SOLUTION :   git branch -r
 
-EXERCISE 7.2 Fetch a master branch from remote repo to your local git repo.
+EXERCISE 7.3 Fetch a remote branch named new_feature_branch from remote repo to my_local_repo.
 SOLUTION :   cd ~/my_local_repo
-             git fetch <remote> master
+             git fetch origin new_feature_branch
 
-EXERCISE 7.3 Integrate the remote branch with local branch using rebase.
-SOLUTION :   git pull --rebase <remote>
+EXERCISE 7.4 Integrate the remote branch with local branch named my_new_branch using rebase.
+SOLUTION :   git pull --rebase origin my_new_branch
 
-EXERCISE 7.4 Push all your local tags to the remote git repo.
-SOLUTION :   git push <remote> --tags
+EXERCISE 7.5 Create a tag in my_local_repo labeled v1.0 and push this local tag v1.0 to the remote git repo.
+SOLUTION :   cd~/my_local_repo
+             git tag v1.0             
+             git push origin --tags
 
-==========================================
+===========================================
 Exercises 8: Collaborating: Using branches
-==========================================
+===========================================
 
 EXERCISE 8.1 Check all completely merged branches with the current branch of your local git repo.
 SOLUTION :   cd ~/my_local_repo
