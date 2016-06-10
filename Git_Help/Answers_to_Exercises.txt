@@ -76,15 +76,15 @@ Exercises 5: Undoing changes
 
 EXERCISE 5.1 Checkout the most recent version of a file named my_new_file in your local git repo.
 SOLUTION :   cd ~/my_local_repo
-	     git checkout HEAD <file_name>
+	     git checkout HEAD my_new_file
 
 EXERCISE 5.2 Revert to the newly created commit in your local git repo.
 SOLUTION :   cd ~/my_local_repo
 	     git revert HEAD
 
-EXERCISE 5.3 Unstage any tracked file in your local git repo.
+EXERCISE 5.3 Unstage a tracked file named my_new_file.txt in your local git repo.
 SOLUTION :   cd ~/my_local_repo
-             git reset <file_path>
+             git reset my_new_file.txt
 
 EXERCISE 5.4 Remove untracked files from the current directory in your local git repo.
 SOLUTION :   cd ~/my_local_repo/<current_directory_name>
@@ -94,14 +94,14 @@ SOLUTION :   cd ~/my_local_repo/<current_directory_name>
 Exercises 6: Rewriting history
 ==================================
 
-EXERCISE 6.1 Create a new branch named my_new_branch
-SOLUTION :   git branch my_new_branch
+EXERCISE 6.1 Create a new branch named local_branch_01
+SOLUTION :   git branch local_branch_01
 
 EXERCISE 6.2 Edit my_new_file and commit these changes to my_new_branch.
-SOLUTION :   git checkout my_new_branch
+SOLUTION :   git checkout local_branch_01
              gedit my_new_file  # edit and save the changes to the file
              git add my_new_file.txt
-             git commit -m "Added a file to my_new_branch"
+             git commit -m "Added a file to local_branch_01"
 
 EXERCISE 6.3 Edit another file named my_second_file.txt in the master branch and commit the changes to the master branch
 SOLUTION :   git checkout master
@@ -112,14 +112,14 @@ SOLUTION :   git checkout master
 EXERCISE 6.4 Update most recent commit message for the most recent commit made to the git repo .
 SOLUTION :   git commit --amend -m "Added second file to master"
 
-EXERCISE 6.5 Rebase my_new_branch onto the changes made to the master branch and then merge these into the master branch.
-SOLUTION :   git checkout my_new_branch
+EXERCISE 6.5 Rebase local_branch_01 onto the changes made to the master branch and then merge these into the master branch.
+SOLUTION :   git checkout local_branch_01
              git rebase master
              git checkout master
              git merge master
 
 EXERCISE 6.6 Change the order of the commits made to the my_local_repo and transfer to the master.
-SOLUTION :   git checkout my_new_branch
+SOLUTION :   git checkout local_branch_01
 	     git rebase -i master
 
 EXERCISE 6.7 Check the reflog for my_local_repo.
@@ -130,21 +130,31 @@ SOLUTION :   cd ~/my_local_repo
 Exercises 7: Collaborating: Syncing
 ====================================
 
-EXERCISE 7.1 Create a remote branch named new_feature_branch and check the updates form remote git repo.
-SOLUTION :   git push origin origin:refs/heads/new_feature branch
+EXERCISE 7.1 Create a remote branch named remote_branch_01 and check the updates from remote git repo.
+SOLUTION :   git push origin origin:refs/heads/remote_branch_01
              git fetch origin
 
 EXERCISE 7.2 Check all remote branches of your remote git repo.
 SOLUTION :   git branch -r
 
-EXERCISE 7.3 Fetch a remote branch named new_feature_branch from remote repo to my_local_repo.
+EXERCISE 7.3 Fetch a remote branch named remote_branch_01 from remote repo to my_local_repo.
 SOLUTION :   cd ~/my_local_repo
-             git fetch origin new_feature_branch
+             git fetch origin remote_branch_01
 
-EXERCISE 7.4 Integrate the remote branch with local branch named my_new_branch using rebase.
-SOLUTION :   git pull --rebase origin my_new_branch
+EXERCISE 7.4 Create a branch named local_branch_02 in local git repo. Edit a file named new_local_file.txt and commit the changes on this new branch.
+SOLUTION :   cd ~/my_local_repo
+             git branch local_branch_02
+             gedit new_local_file.txt  # Edit and save changes to the file.
+             git add new_local_file.txt
+             git commit -m "added new_local_file" 
 
-EXERCISE 7.5 Create a tag in my_local_repo labeled v1.0 and push this local tag v1.0 to the remote git repo.
+EXERCISE 7.5 Integrate the branch named local_branch_02 with local branch master using rebase.
+SOLUTION :   git checkout local_branch_02
+             git rebase master
+             git checkout master
+             git merge local_branch_02
+
+EXERCISE 7.6 Create a tag in my_local_repo labeled v1.0 and push this local tag v1.0 to the remote git repo.
 SOLUTION :   cd~/my_local_repo
              git tag v1.0             
              git push origin --tags
@@ -153,17 +163,19 @@ SOLUTION :   cd~/my_local_repo
 Exercises 8: Collaborating: Using branches
 ===========================================
 
-EXERCISE 8.1 Check all completely merged branches with the current branch of your local git repo.
+EXERCISE 8.1 Checkout the current branch named master. Check all completely merged branches with the master branch of your local git repo.
 SOLUTION :   cd ~/my_local_repo
+             git checkout master
              git branch --merged
 
-EXERCISE 8.2 Create and checkout new branch in your local git repo.
+EXERCISE 8.2 Create and checkout new branch named local_branch_03 in your local git repo.
 SOLUTION :   cd ~/my_local_repo
-             git checkout -b <New_branchname>
+             git checkout -b local_branch_03
 
-EXERCISE 8.3 Merge any branch into the current branch of your local git repo and generate a merge commit. 
+EXERCISE 8.3 Merge local_branch_03 into the current branch master of your local git repo and generate a merge commit. 
 SOLUTION :   cd ~/my_local_repo
-             git merge --no-ff <branchname>
+             git checkout master
+             git merge --no-ff local_branch_03
 
 
 
