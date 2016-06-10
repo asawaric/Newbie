@@ -42,8 +42,45 @@ git reflog --relative-date
 Exercises
 ===================================
 
-EXERCISE 6.1 Update most recent commit message.
+EXERCISE 6.1 Create a new branch named local_branch_01.
 
-EXERCISE 6.2 Change the order of the commits and transfer to the new base.
+EXERCISE 6.2 Edit my_new_file and commit these changes to my_new_branch.
 
-EXERCISE 6.3 Check the reflog for local repository.
+EXERCISE 6.3 Edit another file named my_second_file.txt in the master branch and commit the changes to the master branch.
+
+EXERCISE 6.4 Update most recent commit message for the most recent commit made to the git repo .
+
+EXERCISE 6.5 Rebase local_branch_01 onto the changes made to the master branch and then merge these into the master branch.
+
+EXERCISE 6.6 Change the order of the commits made to the my_local_repo and transfer to the master.
+
+EXERCISE 6.7 Check the reflog for my_local_repo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
