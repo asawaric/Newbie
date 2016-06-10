@@ -53,13 +53,16 @@ git push <remote> <branch>
 Exercises
 ============================
 
-EXERCISE 7.1 Check all your remote branches.
+EXERCISE 7.1 Create a remote branch named remote_branch_01 and check the updates from remote git repo.
 
-EXERCISE 7.2 Fetch a master branch from remote repo.
+EXERCISE 7.2 Check all remote branches of your remote git repo.
 
-EXERCISE 7.3 Integrate the remote branch with local using rebase.
+EXERCISE 7.3 Fetch a remote branch named remote_branch_01 from remote repo to my_local_repo.
 
-EXERCISE 7.4 Push all your local tags to the remote repo.
+EXERCISE 7.4 Create a branch named local_branch_02 in local git repo. Edit a file named new_local_file.txt and commit the changes on this new branch.
+ 
+EXERCISE 7.5 Integrate the branch named local_branch_02 with local branch master using rebase.
 
+EXERCISE 7.6 Create a tag in my_local_repo labeled v1.0 and push this local tag v1.0 to the remote git repo.
 
 
