@@ -53,8 +53,8 @@ What is --system?
 Exercises
 ===========================================
 
-EXERCISE 1.1 Set up your local repo on your local machine and list the contents of the repo.
+EXERCISE 1.1 Create and initialize a local git repository named my_local_repo in your home directory, and list the contents of this repository.
 
-EXERCISE 1.2 git clone an existing remote repository into local machine using SSH key.
+EXERCISE 1.2 Clone an existing remote git repository to home directory on your local machine using SSH key.
 
 EXERCISE 1.3 Configure your user info (name, email, etc) and the text editor in your local git installation.
