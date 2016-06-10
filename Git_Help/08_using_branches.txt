@@ -43,8 +43,9 @@ git branch --merged
 Exercises
 ==================================
 
-EXERCISE 8.1 Check all completely merged branches with the HEAD.
+EXERCISE 8.1 Checkout the current branch named master. Check all completely merged branches with the master branch of your local git repo.
 
-EXERCISE 8.2 Create and checkout new branch.
+EXERCISE 8.2 Create and checkout new branch named local_branch_03 in your local git repo.
 
-EXERCISE 8.3 Merge any branch into the current branch and generate a merge commit. 
+EXERCISE 8.3 Merge local_branch_03 into the current branch master of your local git repo and generate a merge commit. 
+
