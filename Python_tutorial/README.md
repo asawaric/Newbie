@@ -1,4 +1,4 @@
-Python_Tyro
+Python_tutorial
 
 This directory contains interactive tutorials and examples on Python programming.
 
