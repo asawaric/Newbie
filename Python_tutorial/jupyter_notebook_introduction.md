@@ -34,10 +34,12 @@ Installing Jupyter Notebook
 To install Jupyter, Python (Python 2.7 or Python 3.3 or greater) is a required. For this tutorial, Python 2.7.11 is recommended. On Debian-based systems (e.g.Ubuntu), install Jupyter with following command: apt-get install build-essential python-dev
 For more details, see http://jupyter.readthedocs.io/en/latest/install.html
 
-Launching Jupyter Notebook To launch Jupyter Notebook App:
+Launching Jupyter Notebook
 
-1.Open terminal to open a terminal window.
+To launch Jupyter Notebook App:
 
-2.Change the directory to one where you want to have your Jupyter Notebooks e.g. cd ~/My_local_repo/Python_Tyro
+1.Open a terminal window.
 
-3.Type jupyter notebook to launch the Jupyter Notebook App (it will appear in a new browser window or tab).
+2.Change the directory to one where you want to have your Jupyter Notebooks e.g. cd ~/My_local_repo/Python_tutorial
+
+3.Type 'jupyter notebook' to launch the Jupyter Notebook App (it will appear in a new browser window or tab).
