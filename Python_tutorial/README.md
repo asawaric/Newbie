@@ -2,8 +2,4 @@ Python_tutorial
 
 This directory contains interactive tutorials and examples on Python programming.
 
-This tutorial is composed in Jupyter Notebook environment. Brief explanation on Jupyter Notebook and its installation is given in a separate file in this tutorial.
- 
-This tutorial contains total 9 chapters, each chapter written in a separate Jupyter Notebook document containing brief explanation of the main topic, it's commands, syntax and model questions explaining usage of these commands and syntax.
-
-
+These tutorials are composed in the Jupyter Notebook environment, which allows us to create "interactive" notebooks that contain notes/instructions/hints as well as modifiable/executable Python code. For a brief explanation on Jupyter Notebook and its installation look at 'jupyter_notebook_introduction.md'.  
