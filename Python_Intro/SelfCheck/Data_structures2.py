@@ -4,7 +4,7 @@ quiz_list = []
 
 #Question 1
 q_lines = ["Assume x = 5 and y = 4",
-            "What is the result of following operations?"
+            "What is the result of following operations?",
 	    "[x**y] and [x*y]",
             "\n"]
 quiz_list.append(
@@ -20,7 +20,7 @@ quiz_list.append(
 
 #Question 2
 q_lines = ["Assume x = 5.0 and y = 4.0",
-            "What is the result of following operations?"
+            "What is the result of following operations?",
 	    "[x//y] and [x%y]",
             "\n"]
 quiz_list.append(
