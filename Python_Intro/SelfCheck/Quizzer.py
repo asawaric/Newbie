@@ -33,8 +33,8 @@ class selfTest:
             if c[1] is True:
                 solutions.append(str(l))
         #Ask question
-        response    = raw_input(question)
-        if response.upper() in solutions:
+        response    = set([t.upper() for t in raw_input(question) if t.isalpha()])
+        if response.issubset(solutions):
             self.score += 1
             print "Correct!"
         else:
