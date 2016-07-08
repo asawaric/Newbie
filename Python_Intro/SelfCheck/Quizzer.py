@@ -34,7 +34,7 @@ class selfTest:
                 solutions.append(str(l))
         #Ask question
         response    = set([t.upper() for t in raw_input(question) if t.isalpha()])
-        if response.issubset(solutions):
+        if response.issubset(solutions) and (len(response)>0):
             self.score += 1
             print "Correct!"
         else:
