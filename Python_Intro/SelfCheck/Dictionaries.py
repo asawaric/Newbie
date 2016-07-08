@@ -87,8 +87,8 @@ quiz_list.append(
                 {
                 'question': '\n'.join(q_lines),
                 'choices':  {"[('a', 10), ('b', 100)]":True,
-                            "a = 10, b = 100":False,
-                            "(a=10),(b=100)":False,
+                            "(('a', 10), ('b', 100))":False,
+                            "[[a=10],[b=100]]":False,
                             "{a=10, b=100}": False,
                             "{a,b,10,100}":False }
                 }
