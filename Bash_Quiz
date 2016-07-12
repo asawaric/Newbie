@@ -1,0 +1,34 @@
+
+Goodbye World! This is you entering your Bash Command Maze
+	Created by Sam Day-Weiss on Mon Jul 11 09:36:41 SGT 2016
+Note: Hints about the commands to use will be provided in parenthesees after each step
+
+Maze:
+1) Go to ~/Documents (cd)
+2) Confirm that you are in ~/Documents (pwd)
+3) Make a directory named Test_1 (mkdir)
+4) Within this directory make a text file named Bash_Maze_Trail.txt (cd,touch)
+5) We are going to create a command that appends your progress to this file. Do this by using the command alias and tee (alias Bread_Crumb_Trail=“tee -a /Users/yourcomputername/Documents/Test_1/Bash_Maze_Trail.txt”)
+6) Pipe this alias to commands in this format: command_1|Bread_Crumb_Trail
+7) Use this alias to record your progress into the Bash_Maze_Trail.txt file
+8) Exercises with a #*) require piping, the others do not
+9*) Confirm that the document Bash_Maze_Trail.txt was created (man,ls)
+10) Navigate back to ~/Documents
+11) Create another directory named Test_2 in ~/Documents
+12) Navigate back to Test_1 and copy the file to Test_ 2. Rename it: Bash_Maze_Trail_Copy.txt (cd,cp)
+	Note: Make sure to specify where Bash_Maze_Trail.txt is being copied to (using the correct directories and subdirectories)
+13) Move Bash_Maze_Trail_Copy.txt from the Test_2 directory to Test_1 (mv)
+14) Navigate back to ~/Documents and remove the Test_2 Directory (man,rm) BE CAREFUL WITH THIS, rm CAN BE VERY POWERFUL!
+15) DON’T FORGET TO PIPE Bread_Crumb_Trail IN STEPS WITH #*)
+16*) Print to screen the contents of your ~/Documents with their time stamps (man,ls)
+17) Navigate to Test_1 (cd)
+18) Remove Bash_Maze_Trail_Copy.txt from Test_1 (rm)
+19*) Print to screen the lines in Bash_Maze_Trail.txt that have the current month on them (month abbreviated) (grep)
+20) Print to screen the contents of Bash_Maze_Trail.txt (cat)
+21*) Print to screen the first column of information and sort Bash_Maze_Trail.txt (awk,sort)(awk ‘{print$1}’ Bash_Maze_Trail.txt |sort)
+22*) Print to screen how many lines in Bash_Maze_Trail.txt were repeated (and how many times) (man,uniq)
+23*) What would have happened if you hadn’t sorted Bash_Maze_Trail.txt before using uniq? Print to screen your answer (echo)
+24*) Print the Date at which you finished these tasks! (date)
+25) Finally, display the contents of the Bash_Maze_Trail.txt file (You don't need to pipe this one) (cat)
+26) Open your text with: vim Bash_Maze_Trail.txt
+27) Hello World! You made it through the Maze
