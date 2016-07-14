@@ -1,7 +1,7 @@
 import ConfigParser
 from collections import OrderedDict
 
-fileName = "quiz.cfg"
+fileName = "Quiz.cfg"
 config = ConfigParser.ConfigParser()
 config.read(fileName)
 
