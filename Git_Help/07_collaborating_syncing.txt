@@ -1,12 +1,12 @@
 Syncing
 
-In Git's collaboration model every developer is given their own copy of the repository complete with its own local history and branch structure. Users can share series of commits and the entire branches between the repositories thereby managing connections with other repositories.
+In Git's collaboration model, every developer is given their own copy of the repository complete with its own local history and branch structure. Users can share series of commits and even entire branches between repositories to manage connections with other repositories.
 
 For more details read https://www.atlassian.com/git/tutorials/syncing
 
 1] Manage remote connections.
 
-A convenient tool for administering remote connections. Instead of passing the full URL to the fetch, pull, and push commands, it lets you use a more meaningful shortcut to create, view and delete connections to other repo.
+The git remote command is a convenient tool for administering remote connections. Instead of passing the full URL to the fetch, pull, and push commands, it lets you use a more meaningful shortcut to create, view, and delete connections to other repo.
 ===========================
 Checklist for git remote
 ===========================
@@ -19,7 +19,7 @@ git remote rm <remote_repo_name>
 
 2] Importing commits from remote repo
 
-git fetch imports commits from a remote repo into your local repo. The resulting commits are stored as remote branches and has no effect on your local developement work. This makes fetching a safe way to review commits before integrating them with your local repo.
+git fetch imports commits from a remote repo into your local repo. The resulting commits are stored as remote branches and have no effect on your local developement work. This makes fetching a safe way to review commits before integrating them with your local repo.
 ===========================
 Checklist for git fetch
 ===========================
@@ -40,7 +40,7 @@ git pull --rebase <remote>
 
 4] Publish your contribution
 
-git push exports commits to remote branches. It's a convenient way to publish your contributions. But this has potential to overwrite changes, hence need to be careful using git push.
+git push exports commits to remote branches. It's a convenient way to publish your contributions. However, git push can also overwrite changes, thus you must be careful with its use!
 ============================
 Checklist for git push
 ============================
