@@ -1,14 +1,14 @@
 Undoing_changes
 
-Git presents you very useful tools with git checkout, git revert and git reset commands. These commands let you undo chnages in your repository, manipulate either commits or individual files. 
-Be careful, because this is one of the few areas in Git where you may lose some work if you do it wrong!
+Git presents you with very useful tools with git checkout, git revert, and git reset commands. These commands let you undo chnages in your repository and manipulate commits or individual files. 
+Be careful, this is one of the few areas in Git where you may lose some work if you are careless!
 
 For more details, read https://www.atlassian.com/git/tutorials/undoing-changes/git-checkout
 
 1] Checking out old commits, branches, files
 
 git checkout serves as a way to revert back to an old version of an individual file. You can re-commit the old version in a new snapshot as you would do any other file.
-git checkout also lets you switch to a branch to work in it and then merge the work into a branch which contains stable work (such as 'master').
+git checkout also lets you switch to a branch to work in and then merge the work into a branch which contains stable work (such as 'master').
 ===============================
 Checklist for git checkout
 ===============================
@@ -22,7 +22,7 @@ git checkout <commit>
 
 2] Undo committed snapshots
 
-git revert should be used when you want to remove an entire commit from your project hisotry. git checkout does it without losing history by figuring out how to undo the changes introduced by the commit and appends a new commit with the resulting content.
+git revert should be used when you want to remove an entire commit from your project hisotry. git checkout does this without losing history by undoing the changes introduced by the commit and appending a new commit with the resulting content.
 ===============================
 Checklist for git revert
 ===============================
@@ -32,7 +32,7 @@ git revert <commit>
 
 3] Permanent undo
 
-Undo with git reset is used to remove committed snapshots, undo changes in the staging area and the working history. Caution: This command has potential to lose your work as there is no way to retrieve the original copy! So, never perform git reset operation on commits which you have already pushed to a shared repository.
+Undo with git reset is used to remove committed snapshots and undo changes in the staging area and the working history. Caution: This command may result in total loss of work as there is no way to retrieve the original copy! Never perform the git reset operation on commits which you have already pushed to a shared repository.
 ================================
 Checklist for git reset
 ================================
@@ -46,7 +46,7 @@ What does --hard flag do?
 
 4] Remove untracked files
 
-git clean removes untracked files and folders from your working directory. This is not undoable hence make sure you really want to delete the untracked files an folders.
+git clean removes untracked files and folders from your working directory. Because this command is not reversible, make sure that you really want to delete the untracked files and folders.
 =================================
 Checklist for git clean
 =================================
@@ -64,7 +64,7 @@ Exercises
 
 EXERCISE 5.1 Checkout the most recent version of a file named my_new_file in your local git repo.
 
-EXERCISE 5.2 Revert to the newly created commit in your local git repo.
+EXERCISE 5.2 Revert the the newly created commit in your local git repo.
 
 EXERCISE 5.3 Unstage a tracked file named my_new_file.txt in your local git repo.
 
