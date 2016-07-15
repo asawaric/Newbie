@@ -1,6 +1,6 @@
 Comparing workflows
 
-Git repository is a point for all the developers to share their code. With Git's distributed environment, we can utilize some of the distributed workflows to work as a contributor, as an integrator and to maintain a project with a number of contributing developers.
+Git repository is a point for all the developers to share their code. With Git's distributed environment, you can utilize some of the distributed workflows to work as a contributor, as an integrator and as a way to maintain a project with a number of contributing developers.
 
 For more details, read https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
 https://www.atlassian.com/git/tutorials/comparing-workflows
@@ -30,7 +30,7 @@ Retry or find help.
 
 2] Feature branch workflow
 
-Adding feature branches to your developement process is an easy way to encourage collaboration and streamline communiation between the developers. By dedicating an isolated branch to each feature, it is possible to initiate in-depth discussions around new addtions before integrating them into the official project. All feature development should take place in a dedicated branch instead of master branch. This makes it possible to leverage pull requests.
+Adding feature branches to your developement process is an easy way to encourage collaboration and streamline communication between the developers. By dedicating an isolated branch to each feature, it is possible to initiate in-depth discussions regarding new addtions before integrating them into the official project. All feature development should take place in a dedicated branch instead of master branch. This makes it possible to leverage pull requests.
 ==========================
 Workflow
 ==========================
@@ -51,7 +51,7 @@ Push updated master back to origin
 
 3] Gitflow workflow
 
-The Gitflow workflow is a common pattern for managing feature development, release preparation and maintenance. It defines a strict branching model designed around the project release and provides a robust framework for managing larger projects. It uses individual branches for preparing, maintaining and recording releases thereby providing feature isolation, release control and sustainability. It also has all the benefits of the Feature branch workflow : pull requests, isolated experiments and more efficient collaboration.
+The Gitflow workflow is a common pattern for managing feature development, releasinge preparation, and maintenance. It defines a strict branching model designed around the project release and provides a robust framework for managing larger projects. Gitflow workflow uses individual branches for preparing, maintaining, and recording releases, thereby providing feature isolation, release control, and sustainability. Gitflow workflow also has all the benefits of the Feature branch workflow : pull requests, isolated experiments and more efficient collaboration.
 ==========================
 Workflow
 ==========================
@@ -95,7 +95,7 @@ Workflow
 The project maintainer initializes the official repo.
 Developers fork the official repo and get their own server side repo.
 Each developer needs to clone their own public repo on their local machine.
-Developers can edit code, commit changes and create branches in their local repo.
+Developers can edit code, commit changes, and create branches in their local repo.
 Developer push the commit to their own public repo.
 Developer file the pull request with the main repo informing the project maintainer that an update is ready to be integrated.
 The maintainer pulls the developer's changes into his local repo.
