@@ -67,4 +67,38 @@ quiz_list.append(
                 )
 
 
+#Question 5
+q_lines = ["Let lst = ['a', ['c',[42, ['answer'], 'b']]",
+    "Which of the following correctly accesses the answer variable?",
+        "\n"]
+quiz_list.append(
+                {
+                'question':'\n'.join(q_lines),
+                'choices' : { "lst(1)(2)(1)(1)" :False,
+                              "lst[1][2][1][1]" :False,
+                              "lst[2][0][0][1]" :False,
+                              "lst(1)(1)(1)(0)":False,
+                              "lst[1][1][1][0]":True,
+                              }
+                }
+                )
+
+#Question 6
+q_lines = ["let lst = ['a', 'b', 'c', 'd']",
+    "Which of the following commands would print the list backwards?",
+        "\n"]
+quiz_list.append(
+                {
+                'question': '\n'.join(q_lines),
+                'choices': {"lst[-1:0:-1]":False,
+                            "lst[1:0:1]":False,
+                            "lst[-1::-1]":True,
+                            "lst[3::1]":False,
+                            "lst[3::-1]":False,
+                            }
+                }
+                )
+
+
+
 test = Quizzer.selfTest(quiz_list=quiz_list)

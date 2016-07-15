@@ -8,7 +8,7 @@ https://www.atlassian.com/git/tutorials/setting-up-a-repository and
 https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 
 The checklists of git commands helps reinforce your understanding and long-term memory of how to set up a repository.
-Your should be able to perform the exercises at the end of this document.
+You should be able to perform the exercises at the end of this document.
 
 1] Initialize a new repository 
 

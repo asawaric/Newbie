@@ -32,6 +32,6 @@ git commit -a -m <commit_message_in_double_quotes>
 Exercises
 ===========================
 
-EXERCISE 2.1 Add new empty file named "my_new_file.txt" and a folder "my_new_folder" to the local git repository named my_local_repo. You 		     		     should create this local repo if its absent.
+EXERCISE 2.1 Add new empty file named "my_new_file.txt" and a folder "my_new_folder" to the local git repository named my_local_repo. You should create this local repo if it is absent.
 
 EXERCISE 2.2 Commit the addition of new file to the git repo with brief message.
