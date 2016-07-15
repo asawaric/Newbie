@@ -1,6 +1,6 @@
 Viewing old commits.
 
-To see old version of a file, old commits in the repository, git checkout loads any of these saved snapshots onto your local machine. Checking out old commits is a read-only operation.
+To see an old version of a file, old commits in the repository, git checkout loads any of these saved snapshots onto your local machine. Checking out old commits is a read-only operation.
 Viewing old versions of your commit does not affect the current state of your project. 
 
 Please see https://www.atlassian.com/git/tutorials/viewing-old-commits/ for more details.
@@ -20,8 +20,8 @@ git checkout <commit_num> <file>
 
 2] Seeing differences between files, branches, etc.
 
-git diff shows all current local changes in working copy that are unstaged. You can also see only changes that have already been added to the staging area.
-git diff also gives details of how one branch is different from another.
+git diff shows all current local changes in working copy that are unstaged. You can also see changes that have already been added to the staging area.
+git diff also gives details regarding how each branch is different from the other.
 
 For more details, read:
 https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs  
