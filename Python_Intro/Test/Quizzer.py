@@ -63,9 +63,11 @@ class selfTest:
         digitkeys.sort()
         alphakeys.sort()
         for k in digitkeys:
-            numProbs = len(self.quizzes[self.menuOpts[k]]["problems"])
+            probNames = self.quizzes[self.menuOpts[k]]["problems"].keys()
+            numProbs = len(probNames)
+            should_not_test = self.find_problems_not_to_test(self.menuOpts[k])
+            should_test = set(probNames) - set(should_not_test)
             txt = k.ljust(2) + self.menuOpts[k].ljust(30,"-") + ("%d questions"%(numProbs)).ljust(15)
-            should_test = self.find_problems_to_test(self.menuOpts[k])
             if len(should_test) > 0:
                 txt += bcolors.FAIL + "(Incomplete)" + bcolors.ENDC
             else:
@@ -98,7 +100,7 @@ class selfTest:
                     print "Unrecognized option. Exiting quiz taker!"
                     break
             except:
-                print "Unrecognized option. Exiting quiz taker!"
+                print "Main loop failed for unknown reasons. Exiting quiz taker!"
                 break
 
     def find_quizzes(self):
@@ -132,12 +134,19 @@ class selfTest:
         #Ask question
         response    = set([t.upper() for t in raw_input(question) if t.isalpha()])
         if response.issubset(solutions) and (len(response)>0):
-            self.user_hist["results"][quizName][probName].append(1)
+            self.update_user_hist(quizName, probName, 1)
             self.print_colored_txt("Correct!", bcolors.OKGREEN)
         else:
             self.print_colored_txt("Incorrect!", bcolors.FAIL)
-            self.user_hist["results"][quizName][probName].append(0)
+            self.update_user_hist(quizName, probName, 0)
         print ""
+
+    def update_user_hist(self, quizName, probName, val):
+        curr_keys = self.user_hist["results"][quizName].keys()
+        if probName not in curr_keys:
+            self.user_hist["results"][quizName][probName] = [val]
+        else:
+            self.user_hist["results"][quizName][probName].append(val)
 
     def take_quiz(self, quizName):
         """
@@ -145,13 +154,15 @@ class selfTest:
         Shuffle order of questions before issuing quiz
         """
         probNames   = self.quizzes[quizName]["problems"].keys()
-        should_test = self.find_problems_to_test(quizName)
+        should_not_test = self.find_problems_not_to_test(quizName)
+        should_test = list(set(probNames) - set(should_not_test))
         if len(should_test) == 0 :
             retest = self.yesno("No problems need to be tested. Retest all anyway?")
             if retest:
                 shuffle(probNames)
                 for n,p in enumerate(probNames):
                     self.print_colored_txt("Question %d of %d"%(n+1, len(probNames)), bcolors.WARNING)
+                    print quizName
                     self.attempt_problem(quizName, p)
                 self.show_results(quizName)
         else:
@@ -187,18 +198,20 @@ class selfTest:
     def print_colored_txt(self, txt, col):
         print col + txt + bcolors.ENDC
 
-    def find_problems_to_test(self, quizName):
+    def find_problems_not_to_test(self, quizName):
         """
         Find problems in a quiz for which user last tested incorrectly
         """
         quiz_hist   = self.user_hist["results"][quizName]
-        should_test = []
+        should_not_test = []
         for k,v in quiz_hist.iteritems():
             if (len(v) == 0):
-                should_test.append(k)
+                pass
             elif (v[-1] == 0):
-                should_test.append(k)
-        return should_test
+                pass
+            else:
+                should_not_test.append(k)
+        return should_not_test
 
     def show_results(self, quizName):
         """
@@ -259,7 +272,7 @@ class selfTest:
                     res = config.get(section, opt)
                     curr_prob["question"] = res
                 else:
-                    res = config.get(section, opt).split("::")
+                    res = config.get(section, opt).split("~~")
                     if res[1].lower().lstrip().rstrip() == "true":
                         choices[res[0]] = True
                     elif res[1].lower().lstrip().rstrip() == "false":
