@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 from random import shuffle
 import ConfigParser
 import os
@@ -20,10 +22,11 @@ class selfTest:
         self.quizzes        = {}
         self.user_hist      = {"uid":"", "results":{}}
         self.user_fn        = None
-        if not os.path.isdir(userDir):
-            os.mkdir(userDir)
-        self.userDir        = userDir
-        self.questDir       = questDir
+        self.scriptDir      = os.path.dirname(os.path.realpath(__file__))
+        self.userDir        = os.path.join(self.scriptDir, userDir)
+        self.questDir       = os.path.join(self.scriptDir, questDir)
+        if not os.path.isdir(self.userDir):
+            os.mkdir(self.userDir)
         self.menuOpts       = None
 
     def init_user_name(self):
