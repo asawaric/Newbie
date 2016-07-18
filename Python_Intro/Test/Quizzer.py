@@ -3,6 +3,7 @@
 from random import shuffle
 import ConfigParser
 import os
+import shutil
 import cPickle as pickle
 from collections import OrderedDict
 
@@ -238,6 +239,7 @@ class selfTest:
         elif os.path.isfile(self.user_fn):
             overwrite       = self.yesno("Overwrite user record?")
             if overwrite:
+                shutil.copy2(self.user_fn, self.user_fn+".backup")
                 with open(self.user_fn, "wb") as fp:
                     pickle.dump(self.user_hist, fp)
                     self.print_colored_txt("User record overwritten", bcolors.OKGREEN)
