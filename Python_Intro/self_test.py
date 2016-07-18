@@ -9,18 +9,18 @@ from SelfCheck import Sets
 from SelfCheck import Dictionaries
 from SelfCheck import FlowControl
 
-DataStructures.test.run_all_quizzes()
+#DataStructures.test.run_all_quizzes()
 
-IntsAndFloats.test.run_all_quizzes()
+#IntsAndFloats.test.run_all_quizzes()
 
-Persistence.test.run_all_quizzes()
+#Persistence.test.run_all_quizzes()
 
 Lists.test.run_all_quizzes()
 
-Tuples.test.run_all_quizzes()
+#Tuples.test.run_all_quizzes()
 
-Sets.test.run_all_quizzes()
+#Sets.test.run_all_quizzes()
 
-Dictionaries.test.run_all_quizzes()
+#Dictionaries.test.run_all_quizzes()
 
-FlowControl.test.run_all_quizzes()
+#FlowControl.test.run_all_quizzes()
