@@ -7,8 +7,7 @@ for k in range(n-1):
 
 lst2 = [sum(i) for i in throws]
 
-dict1 = dict((v,lst2.count(v)) for v in lst2)
-print dict1
+dict1 = dict((v,lst2.count(v)) for v in set(lst2))
 
 for elem in dict1:
     x = dict1.keys()
