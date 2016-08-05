@@ -2,8 +2,10 @@ import random
 def Black_box(n,m):
     lst1 = [list((random.choice([1,2,3,4,5,6])) for i in range(n)) for i in range(m)]
     lst2 = [sum(i) for i in lst1]
-    dict1 = dict((v, lst2.count(v)) for v in lst2)
-    probability = dict((v,(float(lst2.count(v))/m)) for v in lst2)
+    dict1 = {v:0 for v in set(lst2)}
+    for v in lst2:
+        dict1[v] += 1
+    probability = {v:float(dict1[v])/m for v in dict1}
     print probability
-Black_box(100, 100)
+Black_box(1000, 1000)
 
