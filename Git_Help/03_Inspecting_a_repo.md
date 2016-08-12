@@ -1,0 +1,93 @@
+
+## Inspecting a repository
+
+It's a good practice to check the state of your repository before committing changes to avoid accidentally committing unwanted things. git status command tells you which files are in which state.
+And in case we have created several commits or have cloned a repository with an existing commit history, git log gives the list of commits made in that repository in reverse chronological order.
+
+For more details please see 
+https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-log
+and 
+https://git-scm.com/book/en/v1/Git-Basics-Viewing-the-Commit-History
+and
+https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+
+
+**1] Check the state of the working directory**
+
+git status lists which files are staged, unstaged, and untracked with relevant instructions for staging/unstaging files.
+
+=========================
+
+Checklist for git status
+
+=========================
+
+git status
+
+git status -s
+
+**2] Ignore untracked files**
+
+To specify intentionally untracked files to ignore. You can read more details on gitignore her:e 
+http://zellwk.com/blog/gitignore/
+
+========================
+
+Checklist for gitignore
+
+========================
+
+<*editor*> .gitignore
+
+What is <*editor*> here?
+
+**3] View the commit data**
+
+git log operates on committed history. It displays committed history in a completely user-defined format.
+
+========================
+
+Checklist for git log
+
+========================
+
+git log
+
+git log -n <*limit*>
+
+git log --oneline
+
+git log --stat
+
+git log -p
+
+git log --author="<*pattern*>"
+
+git log --grep="<*pattern*>"
+
+git log <*since*>..<*until*>
+
+git log HEAD~3..HEAD
+
+git log <*file*>
+
+git log --graph --decorate --oneline
+
+What is HEAD~3..HEAD?
+
+
+===========================
+
+Exercises
+
+===========================
+
+EXERCISE 3.1 Check the status of the working directory in your local git repo named my_local_repo.
+
+EXERCISE 3.2 Create a ".gitignore" file in your project directory which lists the files to be ignored.
+
+EXERCISE 3.3 Check the history of commits made to the git repo as graph-summary.
+
+
+
+
