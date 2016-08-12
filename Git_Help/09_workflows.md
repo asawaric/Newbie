@@ -6,7 +6,7 @@ Git repository is a point for all the developers to share their code. With Git's
 For more details, read https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
 https://www.atlassian.com/git/tutorials/comparing-workflows
 
-**1] Centralized Workflow **
+**1] Centralized Workflow**
 
 Centralized workflow uses a central repository to serve as the single point-of-entry for all changes to the project. This workflow requires only one development branch called 'master' where all the changes are committed to.
 
@@ -45,7 +45,7 @@ Git aborts the entire rebase
 Retry or find help.
 
 
-**2] Feature branch workflow **
+**2] Feature branch workflow**
 
 Adding feature branches to your developement process is an easy way to encourage collaboration and streamline communication between the developers. By dedicating an isolated branch to each feature, it is possible to initiate in-depth discussions regarding new addtions before integrating them into the official project. All feature development should take place in a dedicated branch instead of master branch. This makes it possible to leverage pull requests.
 
@@ -82,7 +82,7 @@ Merge the Central repo's copy of new feature
 Push updated master back to origin
 
 
-**3] Gitflow workflow **
+**3] Gitflow workflow**
 
 The Gitflow workflow is a common pattern for managing feature development, releasinge preparation, and maintenance. It defines a strict branching model designed around the project release and provides a robust framework for managing larger projects. Gitflow workflow uses individual branches for preparing, maintaining, and recording releases, thereby providing feature isolation, release control, and sustainability. Gitflow workflow also has all the benefits of the Feature branch workflow : pull requests, isolated experiments and more efficient collaboration.
 
@@ -139,7 +139,7 @@ There are two groups of these hooks:
 Hooks are local. Not copied in a clone operation.
 
 
-**4] Forking workflow **
+**4] Forking workflow**
 
 The forking workflow takes full advantage of Git's branching and cloning capabilities. It provides a safe, reliable way to manage large teams of developers and to accept commits even from untrusted contributors .
 In forking workflow, the project maintainer's public repo is the official repo for other developers.
@@ -173,3 +173,8 @@ The maintainer pulls the developer's changes into his local repo.
 Other developers synchronize with the offical repo.
 
 
+
+
+```python
+
+```
