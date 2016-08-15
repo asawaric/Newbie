@@ -57,7 +57,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
     1. *n* number of dice.
     2. *m* number of throws.
 
-and generates sum and its respective probability for *m* number of throws of *n* number of dice.
+   and generates sum and its respective probability for *m* number of throws of *n* number of dice.
     
 2. Implement this pseudocode in Python. 
 
