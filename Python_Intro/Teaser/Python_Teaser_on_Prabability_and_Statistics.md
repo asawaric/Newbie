@@ -9,7 +9,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 1. How many possible die throw outcomes are there if you threw a six-sided die twice? Note that here getting a die throw of 1 followed 2 (i.e [1, 2]) is distinct from 2 followed by 1 (i.e.[2, 1]).
 
-   * Hint 1: Die throws are independent.
+   * Hint 1: The outcome of one die throw has no effect on the outcome of another die throw. Hence die throws are independent.
 
    * Hint 2: Use list comprehension to create a list of possible outcomes.
 
@@ -18,6 +18,9 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 3. How many possible die throw outcomes are there if you threw *n* dice simultaneously? Write a pseudocode to solve this problem?
 
 4. Implement this pseudocode in Python using only standard Python functions. Do not import any of the Python modules to solve this problem. 
+
+   * Hint 1: Use nested *for* loop. 
+   * Hint 2: Use list comprehension to create a list of lists to represent outcomes of die throws.
 
 5. Do this exercise for generating all possible outcomes of different number of dice throw. 
 
