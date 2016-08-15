@@ -3,9 +3,9 @@
 
 In this teaser we will deal with problems on fair six-sided dice. To start with, workout exercise 1 using pen and paper:
 
-####Note: An experiment of throwing two dice simultaneously is the same as an experiment of throwing one die twice.
+#### Note: An experiment of throwing two dice simultaneously is the same as an experiment of throwing one die twice.
 
-###Exercise 1: Finding all possible outcomes of die throws.
+### Exercise 1: Finding all possible outcomes of die throws.
 
 1. How many possible die throw outcomes are there if you threw a six-sided die twice? Note that here getting a die throw of 1 followed 2 (i.e [1,2]) is distinct from 2 followed by 1 (i.e.[2,1]).
 
@@ -22,48 +22,48 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 * Do this exercise for generating all possible outcomes of different number of dice throw. 
 * What is the biggest number of dice for which you can generate all possible outcomes?
 
-###Exercise 2: Finding unique sums of die throws.
+### Exercise 2: Finding unique sums of die throws.
 
-####For the following questions, write a pseudocode and implement it in Python using only standard Python functions. 
+#### For the following questions, write a pseudocode and implement it in Python using only standard Python functions. 
 
-1.How many unique sums are there if you added the values of two throws of a six-sided die?
+1. How many unique sums are there if you added the values of two throws of a six-sided die?
 
 * Hint: Use function sum() to create a list of sums from a list of possible outcomes.
 
-2.Following the logic in the above exercise find the number of unique sums for *n* number of dice.
+2. Following the logic in the above exercise find the number of unique sums for *n* number of dice.
 
 * Hint: Define a function that takes *n* arguments and gives a list of unique sums.
 
-###Exercise 3: Finding the average value of die throws.
+### Exercise 3: Finding the average value of die throws.
 
 
-#####For following questions, write a pseudocode and implement it in Python using only standard Python functions. 
+##### For following questions, write a pseudocode and implement it in Python using only standard Python functions. 
 
-1.What is the most likely sum from two-throws of a six-sided die? Most likely sum is the average value of die throws.
+1. What is the most likely sum from two-throws of a six-sided die? Most likely sum is the average value of die throws.
 
-* Hint: Average value = $\sum [Sum \times P(X = x)]$
-        Where P(X = x) is the probability of occurrence of Sum.
+* Hint: Average value = $\sum\limits_{S} [S \times P(S)]$$
+        Where S is a sum and P(S) is the probability of occurrence of a sum.
 
-2.Write a Python code for finding average value for *n* dice throw.
+2. Write a Python code for finding average value for *n* dice throw.
 
 * What is the biggest number of dice for which you can get the average value of a throw? Note the time taken by computer to generate the average value of a throw of the biggest number of dice.
 
 * Can you explain why there is a long delay by computer in generating the average value of a throw for greater than 8 dice? 
 
-###Exercise 4: Using the Monte Carlo method.
+### Exercise 4: Using the Monte Carlo method.
 
-1.Write a pseudocode for defining *Black_box* which takes following two input:
+1. Write a pseudocode for defining *Black_box* which takes following two input:
     1. *n* number of dice.
     2. *m* number of throws.
 and generates sum and its respective probability for *m* number of throws of *n* number of dice.
     
-2.Implement this pseudocode in Python. 
+2. Implement this pseudocode in Python. 
 
 * Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of random outcomes only. This will avoid creating list of all possible outcomes and circumvent the CPU memory bottleneck.
 
-3.Using the function *Black_box* defined above, find the most likely number of dice if their throws summed to 'k' (for example k = 51). 
+3. Using the function *Black_box* defined above, find the most likely number of dice if their throws summed to *k* (for example k = 51). 
 
-* What is the likelihood for each possible number of dice given that sum = 'k' is observed? 
+* What is the likelihood for each possible number of dice given that sum = *k* is observed? 
 
 
 
