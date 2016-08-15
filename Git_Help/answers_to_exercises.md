@@ -30,7 +30,8 @@ SOLUTION :
          First, identify the remote git repository from which you'll like to clone. 
 
          To have your git repo ssh-only access, you must have a SSH key set for your Git repo. 
-         See https://help.github.com/articles/generating-an-ssh-key/ to set up SSH key for your Git repo. Then,
+         See [Generating ssh key](https://help.github.com/articles/generating-an-ssh-key/)
+ to set up SSH key for your Git repo. Then,
          
          cd ~	
          
