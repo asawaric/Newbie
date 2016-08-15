@@ -41,7 +41,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 1. What is the most likely sum from two-throws of a six-sided die? Most likely sum is the average value of die throws.
 
-* Hint: Average value = $\sum\limits_{S} [S \times P(S)]$$
+* Hint: Average value = $$\sum\limits_{S} [S \times P(S)]$$
         Where S is a sum and P(S) is the probability of occurrence of a sum.
 
 2. Write a Python code for finding average value for *n* dice throw.
