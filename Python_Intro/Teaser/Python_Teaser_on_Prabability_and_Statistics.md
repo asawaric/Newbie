@@ -7,7 +7,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 ### Exercise 1: Finding all possible outcomes of die throws.
 
-1. How many possible die throw outcomes are there if you threw a six-sided die twice? Note that here getting a die throw of 1 followed 2 (i.e [1,2]) is distinct from 2 followed by 1 (i.e.[2,1]).
+1. How many possible die throw outcomes are there if you threw a six-sided die twice? Note that here getting a die throw of 1 followed 2 (i.e [1,2]) is distinct   from 2 followed by 1 (i.e.[2,1]).
 
 * Hint 1: Die throws are independent.
 
@@ -19,8 +19,9 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 4. Implement this pseudocode in Python using only standard Python functions. Do not import any of the Python modules to solve this problem. 
 
-* Do this exercise for generating all possible outcomes of different number of dice throw. 
-* What is the biggest number of dice for which you can generate all possible outcomes?
+5. Do this exercise for generating all possible outcomes of different number of dice throw. 
+
+6. What is the biggest number of dice for which you can generate all possible outcomes?
 
 ### Exercise 2: Finding unique sums of die throws.
 
@@ -46,24 +47,25 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 2. Write a Python code for finding average value for *n* dice throw.
 
-* What is the biggest number of dice for which you can get the average value of a throw? Note the time taken by computer to generate the average value of a throw of the biggest number of dice.
+3. What is the biggest number of dice for which you can get the average value of a throw? Note the time taken by computer to generate the average value of a throw of the biggest number of dice.
 
-* Can you explain why there is a long delay by computer in generating the average value of a throw for greater than 8 dice? 
+4. Can you explain why there is a long delay by computer in generating the average value of a throw for greater than 8 dice? 
 
 ### Exercise 4: Using the Monte Carlo method.
 
 1. Write a pseudocode for defining *Black_box* which takes following two input:
     1. *n* number of dice.
     2. *m* number of throws.
+
 and generates sum and its respective probability for *m* number of throws of *n* number of dice.
     
 2. Implement this pseudocode in Python. 
 
-* Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of random outcomes only. This will avoid creating list of all possible outcomes and circumvent the CPU memory bottleneck.
+* Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of random outcomes only. This will avoid creating list of possible outcomes and circumvent the CPU memory bottleneck.
 
 3. Using the function *Black_box* defined above, find the most likely number of dice if their throws summed to *k* (for example k = 51). 
 
-* What is the likelihood for each possible number of dice given that sum = *k* is observed? 
+4. What is the likelihood for each possible number of dice given that sum = *k* is observed? 
 
 
 
