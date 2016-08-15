@@ -9,9 +9,9 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 1. How many possible die throw outcomes are there if you threw a six-sided die twice? Note that here getting a die throw of 1 followed 2 (i.e [1,2]) is distinct   from 2 followed by 1 (i.e.[2,1]).
 
-* Hint 1: Die throws are independent.
+   * Hint 1: Die throws are independent.
 
-* Hint 2: Use list comprehension to create a list of possible outcomes.
+   * Hint 2: Use list comprehension to create a list of possible outcomes.
 
 2. From the above exercise, can you find a relation between the number of die throws and the number of possible outcomes of these throws?
 
@@ -29,11 +29,11 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 1. How many unique sums are there if you added the values of two throws of a six-sided die?
 
-* Hint: Use function sum() to create a list of sums from a list of possible outcomes.
+   * Hint: Use function sum() to create a list of sums from a list of possible outcomes.
 
 2. Following the logic in the above exercise find the number of unique sums for *n* number of dice.
 
-* Hint: Define a function that takes *n* arguments and gives a list of unique sums.
+   * Hint: Define a function that takes *n* arguments and gives a list of unique sums.
 
 ### Exercise 3: Finding the average value of die throws.
 
@@ -42,7 +42,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 1. What is the most likely sum from two-throws of a six-sided die? Most likely sum is the average value of die throws.
 
-* Hint: Average value = $$\sum\limits_{S} [S \times P(S)]$$
+   * Hint: Average value = $$\sum\limits_{S} [S \times P(S)]$$
         Where S is a sum and P(S) is the probability of occurrence of a sum.
 
 2. Write a Python code for finding average value for *n* dice throw.
@@ -61,7 +61,7 @@ and generates sum and its respective probability for *m* number of throws of *n*
     
 2. Implement this pseudocode in Python. 
 
-* Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of random outcomes only. This will avoid creating list of possible outcomes and circumvent the CPU memory bottleneck.
+   * Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of random outcomes only. This will avoid creating list of possible outcomes and circumvent the CPU memory bottleneck.
 
 3. Using the function *Black_box* defined above, find the most likely number of dice if their throws summed to *k* (for example k = 51). 
 
