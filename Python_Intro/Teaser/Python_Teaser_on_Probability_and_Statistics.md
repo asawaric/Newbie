@@ -20,9 +20,13 @@ To start with, workout exercise 1 using pen and paper.
 3. How many possible die throw outcomes are there if you threw *n* dice simultaneously? Write a pseudocode to solve this problem?
 
    * Hint1 : Following is an example of a pseudocode to wrtie a possible outcomes of *n* die throws:
-           '''python
+           
+           
+       '''Python
             1. Write an outcome of one die throw.
+
             2. For given number of dice
+
                    Loop to create possible outcomes by adding all the outcomes of one die throw to each outcome of outcomes of one die throw. 
            '''
 
