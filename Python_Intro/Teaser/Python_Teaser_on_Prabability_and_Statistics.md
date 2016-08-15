@@ -29,7 +29,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 1. How many unique sums are there if you added the values of two throws of a six-sided die?
 
-   * Hint: Use function sum() to create a list of sums from a list of possible outcomes.
+   * Hint: Use function sum() to sum the outcomes and create a list of sums from a list of possible outcomes.
 
 2. Following the logic in the above exercise find the number of unique sums for *n* number of dice.
 
@@ -53,7 +53,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 
 ### Exercise 4: Using the Monte Carlo method.
 
-1. Write a pseudocode for defining *Black_box* which takes following two input:
+1. Write a pseudocode for defining *Black_box* which takes following two inputs:
     1. *n* number of dice.
     2. *m* number of throws.
 
@@ -61,7 +61,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
     
 2. Implement this pseudocode in Python. 
 
-   * Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of random outcomes only. This will avoid creating list of possible outcomes and circumvent the CPU memory bottleneck.
+   * Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of only random outcomes. This will avoid creating list of all outcomes and circumvent the CPU memory bottleneck.
 
 3. Using the function *Black_box* defined above, find the most likely number of dice if their throws summed to *k* (for example k = 51). 
 
