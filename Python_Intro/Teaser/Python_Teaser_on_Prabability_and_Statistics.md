@@ -43,7 +43,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
 1. What is the most likely sum from two-throws of a six-sided die? Most likely sum is the average value of die throws.
 
    * Hint: $$Average value = \sum\limits_{S} [S \times P(S)]$$
-        Where S is a sum and P(S) is the probability of occurrence of a sum.
+           ;Where S is a sum and P(S) is the probability of occurrence of a sum.
 
 2. Write a Python code for finding average value of *n* dice throw.
 
@@ -61,7 +61,7 @@ In this teaser we will deal with problems on fair six-sided dice. To start with,
     
 2. Implement this pseudocode in Python. 
 
-   * Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of only random outcomes. This will avoid creating list of all outcomes and circumvent the CPU memory bottleneck.
+   * Hint: For each throw of *n* dice, you will get a random outcome. Hence create a list of only random outcomes. This will avoid creating a list of all outcomes and circumvent the CPU memory bottleneck.
 
 3. Using the function *Black_box* defined above, find the most likely number of dice if their throws summed to *k* (for example k = 51). 
 
