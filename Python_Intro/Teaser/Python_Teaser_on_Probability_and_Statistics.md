@@ -22,14 +22,14 @@ To start with, workout exercise 1 using pen and paper.
    * Hint1 : Following is an example of a pseudocode to wrtie a possible outcomes of *n* die throws:
            
            
-       '''Python
+       '
+
             1. Write an outcome of one die throw.
 
             2. For given number of dice
 
                    Loop to create possible outcomes by adding all the outcomes of one die throw to each outcome of outcomes of one die throw. 
-           '''
-
+           '
 4. Implement this pseudocode in Python using only standard Python functions. Do not import any of the Python modules to solve this problem. 
 
    * Hint 2: Use list comprehension to create a list of outcomes of die throws.
