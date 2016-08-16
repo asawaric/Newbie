@@ -34,7 +34,7 @@ To start with, workout exercise 1 using pen and paper.
 
 5. Do this exercise for generating all possible outcomes of different number of dice throw. 
 
-6. What is the biggest number of dice for which you can generate possible outcomes?
+6. What is the biggest number of dice for which you can get possible outcomes?
 
 ### Exercise 2: Finding unique sums of die throws.
     This exercise makes use of the sample space created in exercise 1 to find the unique sums of die throws.
@@ -63,7 +63,7 @@ To start with, workout exercise 1 using pen and paper.
 
 3. What is the biggest number of dice for which you can get the average value of sums of *n* throws? Note the time taken by computer to generate the average value of sums of throw of the biggest number of dice.
 
-4. Can you explain why it took longer time by computer in generating the average value of a throw for greater than 8 dice? 
+4. Can you explain why time taken by computer is longer in generating the average value of sum of outcomes for throw of greater than 8 dice? 
 
 ### Exercise 4: Using the Monte Carlo method.
 
