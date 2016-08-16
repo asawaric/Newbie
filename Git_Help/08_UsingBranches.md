@@ -7,7 +7,7 @@ For more details read https://www.atlassian.com/git/tutorials/using-branches
 
 **1] Create isolated development environments within a single repository**
 
-git branch command lets you create, list, rename, and delete branches. It's a general purpose branch administration tool; a way to request a brand new working directory, staging are,and project hisotry. 
+git branch command lets you create, list, rename, and delete branches. It's a general purpose branch administration tool; a way to request a brand new working directory, staging area, and project hisotry. 
 
 ==================================
 

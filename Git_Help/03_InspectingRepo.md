@@ -28,7 +28,7 @@ git status -s
 
 **2] Ignore untracked files**
 
-To specify intentionally untracked files to ignore. You can read more details on gitignore her:e 
+To specify intentionally untracked files to ignore. You can read more details on gitignore here: 
 http://zellwk.com/blog/gitignore/
 
 ========================
