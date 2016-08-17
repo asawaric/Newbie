@@ -64,7 +64,7 @@ Exercises
 
 EXERCISE 5.1 Checkout the most recent version of a file named my_new_file in your local git repo.
 
-EXERCISE 5.2 Revert the the newly created commit in your local git repo.
+EXERCISE 5.2 Revert the newly created commit in your local git repo.
 
 EXERCISE 5.3 Unstage a tracked file named my_new_file.txt in your local git repo.
 
