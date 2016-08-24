@@ -1,0 +1,180 @@
+
+## Comparing workflows
+
+Git repository is a point for all the developers to share their code. With Git's distributed environment, you can utilize some of the distributed workflows to work as a contributor, as an integrator and as a way to maintain a project with a number of contributing developers.
+
+For more details, read https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
+https://www.atlassian.com/git/tutorials/comparing-workflows
+
+**1] Centralized Workflow**
+
+Centralized workflow uses a central repository to serve as the single point-of-entry for all changes to the project. This workflow requires only one development branch called 'master' where all the changes are committed to.
+
+========================
+
+Workflow
+
+========================
+
+Initialize the central repo
+
+Clone the central repo
+
+Edit files and commit changes
+
+=>New commits are stored locally and are isolated from the central repo.
+
+Push local master branch to the central repo.
+
+=>Merging conflicts
+
+Fetch the updated central commits
+
+Rebase
+
+=>If local changes conflict with the upstream commits
+
+Git pause the rebasing process
+
+=>Allows to manually resolve the conflicts
+
+=>If troublesome to solve for developers
+
+Git aborts the entire rebase
+
+Retry or find help.
+
+
+**2] Feature branch workflow**
+
+Adding feature branches to your developement process is an easy way to encourage collaboration and streamline communication between the developers. By dedicating an isolated branch to each feature, it is possible to initiate in-depth discussions regarding new addtions before integrating them into the official project. All feature development should take place in a dedicated branch instead of master branch. This makes it possible to leverage pull requests.
+
+==========================
+
+Workflow
+
+==========================
+
+=>Group member 'A' begins a new feauture.
+
+Building up the feature with as many commits
+
+Finishing feature
+
+Pull request to other group member 'B'
+
+=>'B' receives pull request and takes a look at A's feature.
+
+=>'B' wants to add few changes before integrating it to official project.
+
+Pull requests between 'A' and 'B'
+
+=>'A' edits, stages, commits and pushes updates to the central repository.
+
+=>All of A's activities show up in the pull request and 'B' could pull A's feature into his local repo and work on his own.
+
+A publishes his feature
+
+Checking master branch for updates
+
+Merge the Central repo's copy of new feature
+
+Push updated master back to origin
+
+
+**3] Gitflow workflow**
+
+The Gitflow workflow is a common pattern for managing feature development, releasinge preparation, and maintenance. It defines a strict branching model designed around the project release and provides a robust framework for managing larger projects. Gitflow workflow uses individual branches for preparing, maintaining, and recording releases, thereby providing feature isolation, release control, and sustainability. Gitflow workflow also has all the benefits of the Feature branch workflow : pull requests, isolated experiments and more efficient collaboration.
+
+==========================
+
+Workflow
+
+==========================
+
+=>Branches and their role
+
+*Master branch*- stores the official release history
+
+*Develop branch*- serves as an integration branch for feature
+
+*Feature branch*-
+
+Each new feature should reside in its own branch.
+
+Feature branches use develop as their parent branch not the master.
+
+Features should never interact directly with master.
+
+When feature is complete, it gets merged back into develop.
+
+*Release branches*-
+
+Once develop has acquired enough features for a release, you fork a release branch off of develop.
+
+Only bug fixes, documentation generation and other release-oriented tasks should go in this branch.
+
+Once it's ready to ship, the release gets merged into master and tagged with a version number.
+
+Then should be merged back into develop.
+
+*Maintenance branches*-
+
+Maintenance or "hotfix" branches are used to quickly patch production releases.
+
+This is the only branch that should fork directly off of master.
+
+As soon as the fix is complete, it should be merged into both master and develop.
+
+=>Git hooks
+
+Git has a way to fire off custom strips when certain important actions occur.
+
+There are two groups of these hooks:
+
+ client-side: triggered by operations such as committing and merging
+ 
+ server-side: run on network operations such as receiving pushed commits
+ 
+Hooks are local. Not copied in a clone operation.
+
+
+**4] Forking workflow**
+
+The forking workflow takes full advantage of Git's branching and cloning capabilities. It provides a safe, reliable way to manage large teams of developers and to accept commits even from untrusted contributors .
+In forking workflow, the project maintainer's public repo is the official repo for other developers.
+
+==============================
+
+Workflow
+
+==============================
+
+The project maintainer initializes the official repo.
+
+Developers fork the official repo and get their own server side repo.
+
+Each developer needs to clone their own public repo on their local machine.
+
+Developers can edit code, commit changes, and create branches in their local repo.
+
+Developer push the commit to their own public repo.
+
+Developer file the pull request with the main repo informing the project maintainer that an update is ready to be integrated.
+
+The maintainer pulls the developer's changes into his local repo.
+
+ =>Checks to make sure it doesn't break the project.
+ 
+ =>Merges it into his local master branch.
+ 
+ =>Pushes the master branch to the official repo on the server.
+ 
+Other developers synchronize with the offical repo.
+
+
+
+
+```python
+
+```
