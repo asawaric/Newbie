@@ -1,7 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 
-reader = csv.DictReader(open('/home/asawari/Desktop/CSV_Wrangler_RF.csv'))
+reader = csv.DictReader(open('RF.csv'))
 result = {}
 for row in reader:
     for column, value in row.iteritems():
