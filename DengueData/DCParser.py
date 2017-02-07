@@ -30,7 +30,8 @@ for row in rows:
         cols = i.findAll('td')                          # Find the table data cell.
         data['Location'].append( cols[0].get_text().strip() )    # append cell content to the corresponding value list.
         data['cases'].append( cols[1].get_text().strip() )
+        data['Location'] = [item.replace("\r\n", "") for item in data['Location']]
     DengueData = pd.DataFrame( data )
-    DengueData.to_csv("DengueClusters_new.csv") 
+    DengueData.to_csv("DC_07022017.csv") 
 
-DengueData
+print(DengueData)
