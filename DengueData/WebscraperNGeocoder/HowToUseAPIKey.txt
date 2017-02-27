@@ -1,0 +1,39 @@
+************************************************** Requirements and steps followed for geocoding. **************************************************************
+
+Requirements:
+'1. Python 2.7 or later.
+ 2. A Google Maps API key.
+
+Steps:
+ 1. Each Google Maps Web Service request requires an API key or client ID. 
+    API keys are freely available with a Google Account at https://developers.google.com/console. The type of API key you need is a Server key.
+
+ 2. To get an API key:
+
+   a. Visit https://developers.google.com/console and log in with a Google(gmail) account[1].'
+
+   b. Select one of your existing projects, or create a new project. Here new project 'LocateDengueClusters' was created.
+
+   c. Go to the 'Library' and enable the AIP(s) you want to use. For this project only two API(s) were enabled.
+      1. Directions API
+      2. Geocoding API
+     
+   d. Enabling these APIs will give API key of 39 characters. This key can be changed to new key by 'regenerate key' option. The change will take approximately 10 
+      minutes to take effect.
+
+ 3. Install 'googlemaps' using following commands (in linux):
+        For python 2, 'pip install -U googlemaps' and 
+        For python 3, 'pip3 install -U googlemaps'
+
+ 4. As per the example code given in [1], write a code in Python to find latitude and longitude of list of places.
+    The code for 'LocateDengueClusters' project is in 'DengueClustersGeocoder.py' file.
+
+ 5. The time required to get the geo coardinates for the list of places is proportional the number of places in the list.
+
+
+
+
+Reference:
+[1] https://github.com/googlemaps/google-maps-services-python/blob/master/README.md
+
+
