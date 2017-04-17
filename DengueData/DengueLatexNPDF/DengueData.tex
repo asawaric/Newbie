@@ -18,6 +18,8 @@
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{listings}
+\usepackage[usenames, dvipsnames]{color}
 \hypersetup{
 %linkcolor=blue,
 %citecolor=blue
@@ -630,6 +632,45 @@ Total About & 17,000\\
    \label{Aedes Mosquito Breeding}
 \end{figure} 
 
+\textbf{Vector Surveillance}\\
+
+'Surveillance on Ae. aegypti density is important in determining factors related to dengue transmission, in order to prioritize areas and seasons for vector control. Selection of appropriate surveillance strategies are based upon outcome/objective, also taking into consideration time, resources, and infestation levels.
+
+Additionally, vector surveillance is required to sustain the control measures and detect any increase in vector density [45].'
+
+Following are the most used indices in dengue vector surveillance.
+\begin{enumerate}
+\item '\textbf{House Index or Aedes Index (HI):}Percentage of houses infested with larvae and/or pupae. It is measured as, \\ \\
+      HI = $\frac{No. of houses with positive Aedes Larvae}{No. of houses inspected}$ $\times$ 100 \\ \\
+      HI has been widely used to calculate the presence and distribution of Aedes population in a given locality. For epidemiological purposes, the HI is extremely important and indicates potential spread of virus through an area once an infected case becomes established.\\
+      Generally HI greater than 5\% for any locality is an indication that the locality is dengue-sensitive. \\
+\item \textbf{Container Index (CI):}Percentage of water holding containers infested with larvae or pupae. It is measured as, \\ \\
+      CI = $\frac{No. of positive containers}{No. of containers inspected}$ $\times$ 100 \\ \\
+      CI only provides information on the proportion of water-holding containers that are positive.\\
+\item \textbf{Breteau Index (BI):}Number of positive containers per 100 houses inspected in a specific location. It is measured as, \\ \\
+      BI = $\frac{No. of positive containers}{No. of houses inspected}$ $\times$ 100 \\ \\
+      BI establishes a relationship between the positive containers and number of houses. Hence the BI is considered as the most useful single index for estimating Aedes density in a location. \\
+      BI and HI are commonly used for the determination of priority(risk) areas for control measures. BI greater than 20 for any locality is an indication that the locality is dengue-sensitive.\\
+\item \textbf{Pupal Index (PI):}Number of pupae per 100 houses inspected. It is measured as, \\ \\
+      PI = $\frac{No. of pupae}{No. of houses inspected}$ $\times$ 100 \\ \\
+      The emergence of adult mosquito population can be estimated by the pupal count in each container. \\
+\item \textbf{Adult landing/ Biting rate :} Aedes mosquito can be collected on a human bait and landing rate/bait/hour is calculated. \\ Mosquitoes thus collected can be used for the virus isolations. The males should not be counted while calculating the landing/Biting rate.[46].' %The collection should be carried out between 9.00 and 11.00 hours.
+\end{enumerate}
+
+\textbf{Table 2: Dengue vector surveillance indices and their respective risk markers[46].} \\
+
+\begin{tabular}{ |p{5cm}|p{5cm}|p{5cm}| }
+\hline
+\multicolumn{3}{|c|}{\textbf{Top 5 breeding habitats of Aedes Aegypti}} \\
+\hline
+Indices & High risk of transmissions & Low risk of transmission  \\
+\hline
+House Index & \textgreater 10\% & \textless 1\%\\
+Breteau Index & \textgreater 50 & \textless 5\\
+Landing or Biting rate & \textgreater2 per man hour & \textless 0.2 per man hour\\
+\hline
+\end{tabular}
+
 \newpage
 \item \textbf{Dengue cases incidence rates by housing type.}
 \begin{figure}[H]
@@ -1133,8 +1174,157 @@ World Health organization has defined surveillance systems in two categories.
    \label{Imported DF/DHF Cases}
 \end{figure} 
 
+\end{enumerate}
+
+
+\newpage
+\textbf{Possible reasons behind the 2005 and the 2013 dengue outbreaks.}
+\begin{enumerate}
+\item Wikipedia article on '2003 dengue outbreak in Singapore' has mentioned that,
+\begin{itemize}
+\item 'The National Environment Agency said that the dengue fever problem may be worsening because of higher temperatures and changes in viral strains. The mean temperature rose to 28.2 °C (82.8 °F) from 27.8 °C in 2003. 
+\item Health Minister Khaw Boon Wan said that one of the concerns is that more Singaporeans are infected with Dengue Type 3, which is a new strain of the dengue virus.
+\item Dr Paul Reiter, Professor of Entomology at the Pasteur Institute in France, suggested that Singapore's success in suppressing the dengue has partly contributed to this year sudden increase in dengue cases. The population born over the last two decades has a low herd immunity and therefore more susceptible to the virus[47].'
+\end{itemize}
+\item A review report on 'Globalization and infectious diseases: A review of the linkages' has mentioned following points regarding outbreak of vector borne diseases,
+\begin{itemize}
+\item In the South pacific region, outbreaks of dengue in areas on the fringe of the endemic zone in 1990 to 1995 correlated reasonably well with the El Nino events[49].'
+\item \textbf{Due to refugee camps:} Conditions also favour the outbreak of vector-borne diseases, since refugees often travel from their home in non-endemic regions and may not be immune to local pathogens.
+\end{itemize} 
+\item \textbf{El Nino effect:}
+\begin{itemize}
+\item 'El Nino is a climate cycle in the Pacific Ocean with a global impact on weather patterns. The cycle begins when warm water in the western tropical Pacific Ocean shifts eastward along the equator toward the coast of South America. Normally, this warm water pools near Indonesia and the Philippines. During an El Niño, the Pacific's warmest surface waters sit offshore of northwestern South America[52].' \\
+\item 'El Nino is the warm phase of the El Niño Southern Oscillation (Commonly called ENSO) associated with a band of warm ocean water that develops in the central and east-central equatorial Pacific  (between approximately the International Date Line and 120°W), including off the Pacific coast of South America. \\
+El Niño Southern Oscillation refers to the cycle of warm and cold temperatures, as measured by sea surface temperature, SST, of the tropical central and eastern Pacific Ocean. El Niño is accompanied by high air pressure in the western Pacific and low air pressure in the eastern Pacific. The cool phase of ENSO is called "La Niña" with SST in the eastern Pacific below average and air pressures high in the eastern and low in western Pacific. The ENSO cycle, both El Niño and La Niña, causes global changes of both temperatures and rainfall. \\
+\item Extreme weather conditions related to the El Niño cycle correlate with changes in the incidence of epidemic diseases. For example, the El Niño cycle is associated with increased risks of some of the diseases transmitted by mosquitoes, such as malaria, dengue, and Rift Valley fever[50].' \\
+\item A paper titled '2013 Dengue Outbreaks in Singapore and Malaysia Caused by Different Viral Strains' published in the 'American journal of tropical medicine and hygiene' mentions that characterization of 14,079 circulating dengue viruses in a cross-border surveillance program, UNITEDengue, revealed that the 2013 outbreaks in Singapore and Malaysia were associated with replacement of predominant serotype. While the predominant virus in Singapore switched from DENV2 to DENV1, DENV2 became predominant in neighboring Malaysia. Dominance of DENV2 was most evident on the southern states where higher fatality rates were observed[51].
+\end{itemize}
 
 \end{enumerate}
+
+%===================================================================
+
+%=================================================================== 
+\newpage
+\textbf{DailyDengueClusters.py :Python code for Web scraping dengue cluster data and Geocoding of dengue clusters.}
+\color{blue}
+\begin{lstlisting}
+
+import urllib.request
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup
+import pandas as pd
+import datetime
+
+# Request a link.
+wiki = Request("http://www.dengue.gov.sg/subject.asp?id=74", headers = {"User-Agent": "Chrome/53.0.2785.116"})
+page = urlopen(wiki).read()             # Read a link webpage.
+ 
+# Extract webpage info using lxml parser.
+soup = BeautifulSoup(page, 'lxml')
+soup.prettify()                         # Neatly arrange the file content.
+
+#Find all the table tags in html file.
+all_tables=soup.findAll('table')
+right_table=soup.find('table', class_='MsoNormalTable') # Find the table to 
+parse by specifying class.
+
+data = {
+        'Location' : [],
+        'cases' : []
+       }
+
+# Find table tags in right_table.
+rows = right_table.findAll("table")
+
+#Find the rows of table:
+for row in rows:
+    cells = row.findAll('tr')[1:]        # Omit the 1st row of each table.
+    for i in cells:
+        cols = i.findAll('td')           # Find the table data cell.
+        data['Location'].append( cols[0].get_text().strip() )  # append cell
+content to the corresponding value list.
+        data['cases'].append( cols[1].get_text().strip() )
+        data['Location'] = [item.replace("\r\n", "") for item in data['Location']]
+        
+DengueData = pd.DataFrame( data )
+DengueData.loc[:,'Date'] = [datetime.date.today()] * len(DengueData)
+DengueData.to_csv("DC20170413.csv", index=False)
+
+
+f = open('DengueClusters.csv', 'a')
+DengueData.to_csv(f, header=False, index=False)
+
+\end{lstlisting}
+
+%%===================================================================
+\newpage
+\color{black}
+\textbf{DengueClustersGeocodes.py :Python code to record the latitude and longitude coordinates of dengue clusters.}
+\color{Magenta}
+\begin{lstlisting}
+import googlemaps
+from datetime import datetime
+import pandas as pd
+
+gmaps = googlemaps.Client(key='AIzaSyAKjQWIoXq2q0lhHvNIoOWUDszRU8N0sgA')  # Enter the key received while setting up the project.
+colname = ['Location', 'Cases', 'Date']
+data = pd.read_csv('DengueClusters.csv', names=colname)
+
+Locations = data.Location.tolist()
+Locations2 = Locations[1:]
+Dates = data.Date.tolist()
+Dates2 = Dates[1:]
+LatLong = []
+LatLong2 = []
+Latitude = []
+Longitude = []
+
+# Geocoding an address
+for i in Locations2:
+    geocode_result = gmaps.geocode(i + ',Singapore')
+    for j in geocode_result:
+        LatLong.append(j['geometry'])
+for k in LatLong:
+    LatLong2.append(k['location'])
+for elem in LatLong2:
+    Latitude.append(elem['lat'])
+    Longitude.append(elem['lng'])
+
+Table = pd.DataFrame({'Locations' : Locations2,
+                      'Latitude' : Latitude,
+                      'Longitude': Longitude,
+                      'Date': Dates2})
+Table.to_csv('GeocodeswithDate.csv', index=False)
+
+
+\end{lstlisting}
+
+\newpage
+\color{black}
+\textbf{How do these python codes given above work?}\\ \\
+1. DailyDengueClusters.py \\
+\begin{itemize}
+\item Before running this code update the name of the csv file as per the date.\\
+\item Depending on which browser user is using to access the NEA's website, the 'headers' value will differ for variable 'wiki'. User should check for his/her browser's 'User-Agent' id and update it in the code accordingly.\\
+\end{itemize} 
+
+2. DengueClustersGeocodes.py \\ \\
+Before running this code do the following necessary steps: \\
+\begin{itemize}
+\item Login to 'Google Maps APIs' with your gmail and password. \\ 
+\item Create a new project for this code. Follow the instructions given here\\ \texttt{\url{https://developers.google.com/maps/documentation/geocoding/start}} \\
+\item Enable the API.\\
+\item Get an API key.\\
+\item Add this API key into 'gmaps' variable.\\
+\item Update the name of the csv file as per the date. Geocodes of the updated dengue clusters will be appended to the 'GeocodeswithDate.csv' file.\\ Note: Google maps geocoding API is limited to 2500 free requests per day. If your input file 'DengueData.csv' has more than 2500 entries then you will get an error upon running this code. Hence, I recommend that fetch a single dengue cluster file generated on a particular day (by running 'DailyDengueClusters.py' code) and update the file name for 'data' variable with the newly generated csv file.\\
+
+\end{itemize} 
+%%=================================================================== 
+
+
+
+
 %===================================================================
 
 %=================================================================== 
@@ -1355,6 +1545,34 @@ Ministry Of Health, Singapore. Annual report on Communicable Diseases Surveillan
 \bibitem{WHO website}
 World health Organization. Immunization, Vaccines and Biologicals.
 \\\texttt{\url{http://www.who.int/immunization/monitoring_surveillance/burden/vpd/surveillance_type/sentinel/en/}}
+
+\bibitem{WHO Website} 
+Dengue Control, Vector Surveillance.
+\\\texttt{\url{http://www.who.int/denguecontrol/monitoring/vector_surveillance/en/}}.
+
+\bibitem{scribd Website} 
+Kaey Niezam, Lecture on Pest and Vectors management. Aedes Index. MCHSc (Environmental Health) School of Environmental Health Victoria International College.
+\\\texttt{\url{https://www.scribd.com/doc/41670075/Lecture-10-Aedes-Index}}.
+
+\bibitem{Wikipedia} 
+2005 Dengue Outbreak in Singapore.
+\\\texttt{\url{https://en.wikipedia.org/wiki/2005_dengue_outbreak_in_Singapore}}.
+
+\bibitem{WHO} 
+Globalization and infectious diseases: A review of the linkages, WHO.
+\\\texttt{\url{http://www.who.int/tdr/publications/documents/seb_topic3.pdf}}.
+
+\bibitem{Wikipedia} 
+Wikipedia, El Nino.
+%\\\texttt{\url{https://en.wikipedia.org/wiki/El_Ni\%C3\%B1o\#Effects_on_humanity}}.
+
+\bibitem{American journal of tropical medicine and hygiene.} 
+2013 Dengue Outbreaks in Singapore and Malaysia Caused by Different Viral Strains
+\\\texttt{\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4458818/}}.
+
+\bibitem{Live Science} 
+Live Science, El Nino.
+\\\texttt{\url{http://www.livescience.com/3650-el-nino.html}}.
 
 
 \end{thebibliography}
